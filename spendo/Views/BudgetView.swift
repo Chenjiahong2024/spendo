@@ -406,9 +406,7 @@ struct BudgetView: View {
                         }
                         
                         NavigationLink(destination: ProfileView()) {
-                            Image(systemName: "person.crop.circle.fill")
-                                .font(.system(size: 28))
-                                .foregroundColor(SpendoTheme.textSecondary)
+                            SharedAvatarView(size: 28)
                         }
                     }
                 }

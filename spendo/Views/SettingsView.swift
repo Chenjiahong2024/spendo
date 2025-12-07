@@ -220,10 +220,9 @@ struct SettingsView: View {
 
 // MARK: - 用户头像区域
 struct UserProfileHeader: View {
-    @AppStorage("userName") private var userName = "用户"
+    @ObservedObject private var avatarManager = AvatarManager.shared
     @State private var showImagePicker = false
     @State private var showNameEditor = false
-    @State private var avatarImage: UIImage?
     @State private var tempName = ""
     
     var body: some View {
@@ -231,21 +230,7 @@ struct UserProfileHeader: View {
             // 头像
             Button(action: { showImagePicker = true }) {
                 ZStack {
-                    if let image = avatarImage {
-                        Image(uiImage: image)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 80, height: 80)
-                            .clipShape(Circle())
-                    } else {
-                        Circle()
-                            .fill(SpendoTheme.cardBackground)
-                            .frame(width: 80, height: 80)
-                        
-                        Image(systemName: "person.crop.circle.fill")
-                            .font(.system(size: 70))
-                            .foregroundColor(SpendoTheme.textSecondary)
-                    }
+                    SharedAvatarView(size: 80)
                     
                     // 相机图标
                     Circle()
@@ -272,11 +257,11 @@ struct UserProfileHeader: View {
             
             // 用户名（可点击编辑）
             Button(action: {
-                tempName = userName
+                tempName = avatarManager.userName
                 showNameEditor = true
             }) {
                 HStack(spacing: 6) {
-                    Text(userName)
+                    Text(avatarManager.userName)
                         .font(.system(size: 20, weight: .semibold))
                         .foregroundColor(SpendoTheme.textPrimary)
                     
@@ -287,43 +272,25 @@ struct UserProfileHeader: View {
             }
         }
         .padding(.vertical, 20)
-        .onAppear {
-            loadAvatarImage()
-        }
         .sheet(isPresented: $showImagePicker) {
-            AvatarImagePicker(image: $avatarImage, onImageSelected: saveAvatarImage)
+            AvatarImagePicker(onImageSelected: { image in
+                avatarManager.saveAvatarImage(image)
+            })
         }
         .alert("修改用户名", isPresented: $showNameEditor) {
             TextField("用户名", text: $tempName)
             Button("取消", role: .cancel) {}
             Button("确定") {
                 if !tempName.isEmpty {
-                    userName = tempName
+                    avatarManager.updateUserName(tempName)
                 }
             }
-        }
-    }
-    
-    // 加载头像
-    private func loadAvatarImage() {
-        if let data = UserDefaults.standard.data(forKey: "userAvatarImage"),
-           let image = UIImage(data: data) {
-            avatarImage = image
-        }
-    }
-    
-    // 保存头像
-    private func saveAvatarImage(_ image: UIImage?) {
-        if let image = image,
-           let data = image.jpegData(compressionQuality: 0.8) {
-            UserDefaults.standard.set(data, forKey: "userAvatarImage")
         }
     }
 }
 
 // MARK: - 头像选择器
 struct AvatarImagePicker: UIViewControllerRepresentable {
-    @Binding var image: UIImage?
     let onImageSelected: (UIImage?) -> Void
     @Environment(\.dismiss) private var dismiss
     
@@ -351,10 +318,8 @@ struct AvatarImagePicker: UIViewControllerRepresentable {
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             // 优先使用编辑后的图片
             if let editedImage = info[.editedImage] as? UIImage {
-                parent.image = editedImage
                 parent.onImageSelected(editedImage)
             } else if let originalImage = info[.originalImage] as? UIImage {
-                parent.image = originalImage
                 parent.onImageSelected(originalImage)
             }
             parent.dismiss()

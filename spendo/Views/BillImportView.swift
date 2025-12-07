@@ -33,22 +33,20 @@ struct BillImportView: View {
     @State private var showError = false
     
     var body: some View {
-        NavigationStack {
-            mainContent
-                .navigationTitle("bill_import".localized)
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar { toolbarContent }
-                .sheet(isPresented: $showSourcePicker) { sourcePickerSheet }
-                .sheet(isPresented: $showFilePicker) { filePickerSheet }
-                .sheet(isPresented: $showImportPreview) { previewSheet }
-                .sheet(isPresented: $showTemplateInfo) { templateSheet }
-                .alert("import_error".localized, isPresented: $showError) {
-                    Button("confirm".localized, role: .cancel) {}
-                } message: {
-                    Text(errorMessage ?? "未知错误")
-                }
-                .overlay { processingOverlay }
-        }
+        mainContent
+            .navigationTitle("bill_import".localized)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar { toolbarContent }
+            .sheet(isPresented: $showSourcePicker) { sourcePickerSheet }
+            .sheet(isPresented: $showFilePicker) { filePickerSheet }
+            .sheet(isPresented: $showImportPreview) { previewSheet }
+            .sheet(isPresented: $showTemplateInfo) { templateSheet }
+            .alert("import_error".localized, isPresented: $showError) {
+                Button("confirm".localized, role: .cancel) {}
+            } message: {
+                Text(errorMessage ?? "未知错误")
+            }
+            .overlay { processingOverlay }
     }
     
     // MARK: - 主内容
@@ -172,13 +170,6 @@ struct BillImportView: View {
     // MARK: - 工具栏
     @ToolbarContentBuilder
     private var toolbarContent: some ToolbarContent {
-        ToolbarItem(placement: .navigationBarLeading) {
-            Button(action: { dismiss() }) {
-                Image(systemName: "chevron.left")
-                    .foregroundColor(SpendoTheme.textPrimary)
-            }
-        }
-        
         ToolbarItem(placement: .navigationBarTrailing) {
             Button("解析") { parseFile() }
                 .foregroundColor(canParse ? SpendoTheme.primary : SpendoTheme.textTertiary)

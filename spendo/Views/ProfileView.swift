@@ -25,11 +25,9 @@ struct ProfileView: View {
                     VStack(spacing: 24) {
                         // 头像和用户名
                         VStack(spacing: 16) {
-                            Image(systemName: "person.crop.circle.fill")
-                                .font(.system(size: 80))
-                                .foregroundColor(SpendoTheme.textSecondary)
+                            SharedAvatarView(size: 80)
                             
-                            Text("ledger_title".localized)
+                            Text(AvatarManager.shared.userName)
                                 .font(.system(size: 24, weight: .bold))
                                 .foregroundColor(SpendoTheme.textPrimary)
                             

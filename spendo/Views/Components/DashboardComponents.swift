@@ -30,9 +30,7 @@ struct DashboardHeaderView: View {
             
             // 头像 - 链接到个人主页
             Button(action: { showProfile = true }) {
-                Image(systemName: "person.crop.circle.fill")
-                    .font(.system(size: 40))
-                    .foregroundColor(SpendoTheme.textSecondary)
+                SharedAvatarView(size: 40)
             }
             .padding(.leading, 8)
         }
