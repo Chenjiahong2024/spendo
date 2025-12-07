@@ -55,7 +55,7 @@ struct AssetSettingsView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("资产设置")
+        .navigationTitle("asset_settings".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -101,7 +101,7 @@ struct StatisticsSettingsView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("统计设置")
+        .navigationTitle("statistics_settings".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -167,7 +167,7 @@ struct TemplateSettingsView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("模板设置")
+        .navigationTitle("template_settings".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -210,7 +210,7 @@ struct RefundSettingsView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("退款设置")
+        .navigationTitle("refund_settings".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -257,7 +257,7 @@ struct LocationSettingsView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("记账位置")
+        .navigationTitle("location_settings".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -309,7 +309,7 @@ struct BillImageSettingsView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("账单图片")
+        .navigationTitle("bill_image".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -345,7 +345,7 @@ struct TimeSettingsView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("时间设置")
+        .navigationTitle("time_settings".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -376,7 +376,7 @@ struct BookkeepingMapView: View {
                 .padding()
             }
         }
-        .navigationTitle("记账地图")
+        .navigationTitle("bookkeeping_map".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -467,7 +467,7 @@ struct BackupRestoreView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("备份与恢复")
+        .navigationTitle("backup_restore".localized)
         .navigationBarTitleDisplayMode(.inline)
         .alert("确认恢复", isPresented: $showRestoreAlert) {
             Button("取消", role: .cancel) {}
@@ -533,7 +533,7 @@ struct EfficiencySettingsView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("效率")
+        .navigationTitle("efficiency".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -679,7 +679,7 @@ struct PersonalizationView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("个性化")
+        .navigationTitle("personalization".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -707,7 +707,7 @@ struct FAQView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("常见问题")
+        .navigationTitle("faq".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -789,7 +789,7 @@ struct UserGuideView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("使用指南")
+        .navigationTitle("user_guide".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -849,7 +849,7 @@ struct HelpFeedbackView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("帮助与反馈")
+        .navigationTitle("help_feedback".localized)
         .navigationBarTitleDisplayMode(.inline)
         .alert("提交成功", isPresented: $showSubmitAlert) {
             Button("确定") {
@@ -904,7 +904,7 @@ struct ShareAppView: View {
             }
             .padding(.top, 60)
         }
-        .navigationTitle("分享给朋友")
+        .navigationTitle("share_app".localized)
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $showShareSheet) {
             ShareSheet(items: ["推荐一款好用的记账App - Spendo"])
@@ -1011,7 +1011,7 @@ struct LanguageSettingsView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("语言设置")
+        .navigationTitle("language_settings".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
     
