@@ -28,14 +28,14 @@ struct VoiceInputView: View {
                             Image(systemName: "mic.slash")
                                 .font(.system(size: 50))
                                 .foregroundColor(SpendoTheme.accentRed)
-                            Text("需要麦克风和语音识别权限")
+                            Text("microphone_permission_required".localized)
                                 .font(.system(size: 16))
                                 .foregroundColor(SpendoTheme.textSecondary)
-                            Text("请在设置中开启权限")
+                            Text("open_settings_hint".localized)
                                 .font(.system(size: 14))
                                 .foregroundColor(SpendoTheme.textTertiary)
                             
-                            Button("打开设置") {
+                            Button("settings".localized) {
                                 if let url = URL(string: UIApplication.openSettingsURLString) {
                                     UIApplication.shared.open(url)
                                 }
@@ -66,17 +66,17 @@ struct VoiceInputView: View {
                         }
                         
                         // 状态文字
-                        Text(voiceRecognizer.isRecording ? "正在聆听..." : "点击按钮开始录音")
+                        Text(voiceRecognizer.isRecording ? "listening".localized : "tap_to_record".localized)
                             .font(.system(size: 16))
                             .foregroundColor(SpendoTheme.textSecondary)
                         
                         // 识别结果
                         VStack(spacing: 8) {
-                            Text("识别结果")
+                            Text("recognition_result".localized)
                                 .font(.system(size: 14))
                                 .foregroundColor(SpendoTheme.textTertiary)
                             
-                            Text(voiceRecognizer.recognizedText.isEmpty ? "等待语音输入..." : voiceRecognizer.recognizedText)
+                            Text(voiceRecognizer.recognizedText.isEmpty ? "waiting_voice_input".localized : voiceRecognizer.recognizedText)
                                 .font(.system(size: 20, weight: .medium))
                                 .foregroundColor(voiceRecognizer.recognizedText.isEmpty ? SpendoTheme.textTertiary : SpendoTheme.textPrimary)
                                 .multilineTextAlignment(.center)

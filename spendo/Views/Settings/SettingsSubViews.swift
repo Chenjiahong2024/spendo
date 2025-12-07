@@ -30,7 +30,7 @@ struct BillExportView: View {
             ScrollView {
                 VStack(spacing: 20) {
                     // 导出格式
-                    SettingsCard(title: "导出格式") {
+                    SettingsCard(title: "export_format".localized) {
                         Picker("格式", selection: $exportFormat) {
                             ForEach(ExportFormat.allCases, id: \.self) { format in
                                 Text(format.rawValue).tag(format)
@@ -40,17 +40,17 @@ struct BillExportView: View {
                     }
                     
                     // 日期范围
-                    SettingsCard(title: "日期范围") {
+                    SettingsCard(title: "date_range".localized) {
                         VStack(spacing: 12) {
-                            DatePicker("开始日期", selection: $startDate, displayedComponents: .date)
-                            DatePicker("结束日期", selection: $endDate, displayedComponents: .date)
+                            DatePicker("start".localized, selection: $startDate, displayedComponents: .date)
+                            DatePicker("end".localized, selection: $endDate, displayedComponents: .date)
                         }
                     }
                     
                     // 统计信息
-                    SettingsCard(title: "导出预览") {
+                    SettingsCard(title: "export_preview".localized) {
                         HStack {
-                            Text("交易笔数")
+                            Text("transaction_count".localized)
                                 .foregroundColor(SpendoTheme.textSecondary)
                             Spacer()
                             Text("\(filteredTransactions.count) 笔")
@@ -67,7 +67,7 @@ struct BillExportView: View {
                             } else {
                                 Image(systemName: "square.and.arrow.up")
                             }
-                            Text("导出账单")
+                            Text("bill_export".localized)
                         }
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundColor(.white)
@@ -81,7 +81,7 @@ struct BillExportView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("账单导出")
+        .navigationTitle("bill_export".localized)
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $showShareSheet) {
             if let url = exportedFileURL {

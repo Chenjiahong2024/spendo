@@ -35,15 +35,15 @@ struct BillImportView: View {
     var body: some View {
         NavigationStack {
             mainContent
-                .navigationTitle("导入数据")
+                .navigationTitle("bill_import".localized)
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar { toolbarContent }
                 .sheet(isPresented: $showSourcePicker) { sourcePickerSheet }
                 .sheet(isPresented: $showFilePicker) { filePickerSheet }
                 .sheet(isPresented: $showImportPreview) { previewSheet }
                 .sheet(isPresented: $showTemplateInfo) { templateSheet }
-                .alert("导入错误", isPresented: $showError) {
-                    Button("确定", role: .cancel) {}
+                .alert("import_error".localized, isPresented: $showError) {
+                    Button("confirm".localized, role: .cancel) {}
                 } message: {
                     Text(errorMessage ?? "未知错误")
                 }

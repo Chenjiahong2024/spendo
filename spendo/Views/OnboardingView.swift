@@ -29,10 +29,10 @@ struct OnboardingView: View {
                             )
                         )
                     
-                    Text("欢迎使用 Spendo")
+                    Text("welcome_spendo".localized)
                         .font(.system(size: 32, weight: .bold))
                     
-                    Text("极简记账，数据洞察\n让每一笔花费都清晰可见")
+                    Text("welcome_description".localized)
                         .font(.system(size: 18))
                         .foregroundColor(.secondary)
                         .multilineTextAlignment(.center)
@@ -47,20 +47,20 @@ struct OnboardingView: View {
                     
                     FeatureCard(
                         icon: "bolt.fill",
-                        title: "快速记账",
-                        description: "支持语音、扫描小票等多种方式"
+                        title: "quick_input".localized,
+                        description: "feature_quick_description".localized
                     )
                     
                     FeatureCard(
                         icon: "chart.bar.fill",
-                        title: "智能分析",
-                        description: "自动分类，AI洞察消费趋势"
+                        title: "smart_accounting".localized,
+                        description: "feature_smart_description".localized
                     )
                     
                     FeatureCard(
                         icon: "target",
-                        title: "预算管理",
-                        description: "设置预算，实时追踪支出"
+                        title: "budget".localized,
+                        description: "feature_budget_description".localized
                     )
                     
                     Spacer()
@@ -75,7 +75,7 @@ struct OnboardingView: View {
                         .font(.system(size: 80))
                         .foregroundColor(.blue)
                     
-                    Text("选择主币种")
+                    Text("primary_currency".localized)
                         .font(.system(size: 28, weight: .bold))
                     
                     Picker("币种", selection: $selectedCurrency) {
@@ -86,7 +86,7 @@ struct OnboardingView: View {
                     .pickerStyle(.wheel)
                     .frame(height: 150)
                     
-                    PrimaryGlowButton(title: "开始使用") {
+                    PrimaryGlowButton(title: "get_started".localized) {
                         appState.completeOnboarding()
                     }
                     .padding(.bottom, 50)

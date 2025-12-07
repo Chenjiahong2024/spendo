@@ -20,15 +20,15 @@ enum iCloudSyncStatus: Equatable {
     var displayText: String {
         switch self {
         case .unknown:
-            return "检测中..."
+            return "detecting".localized
         case .available:
-            return "可用"
+            return "available".localized
         case .unavailable(let reason):
             return reason
         case .syncing:
-            return "同步中..."
+            return "syncing".localized
         case .synced:
-            return "已同步"
+            return "synced".localized
         case .error(let message):
             return message
         }

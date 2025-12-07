@@ -280,3 +280,40 @@
 "view_guide" = "查看在线指南";
 "view_website" = "访问官方网站";
 "ledger_title" = "我的账本";
+
+// 引导页
+"welcome_spendo" = "欢迎使用 Spendo";
+"welcome_description" = "极简记账，数据洞察\n让每一笔花费都清晰可见";
+"feature_quick_description" = "支持语音、扫描小票等多种方式";
+"feature_smart_description" = "自动分类，AI洞察消费趋势";
+"feature_budget_description" = "设置预算，实时追踪支出";
+"get_started" = "开始使用";
+
+// 密码保护
+"face_unlock" = "面容解锁";
+"pin_unlock" = "PIN码解锁";
+"lock_timing" = "上锁时机";
+"lock_immediately" = "立刻上锁";
+"minutes_1" = "1分钟";
+"minutes_2" = "2分钟";
+"minutes_3" = "3分钟";
+"minutes_5" = "5分钟";
+"minutes_10" = "10分钟";
+
+// iCloud 同步
+"detecting" = "检测中...";
+"available" = "可用";
+"syncing" = "同步中...";
+"synced" = "已同步";
+
+// 语音输入
+"microphone_permission_required" = "需要麦克风和语音识别权限";
+"open_settings_hint" = "请在设置中开启权限";
+"listening" = "正在聆听...";
+"tap_to_record" = "点击按钮开始录音";
+"recognition_result" = "识别结果";
+"waiting_voice_input" = "等待语音输入...";
+
+// 导入导出
+"import_error" = "导入错误";
+"unknown_error" = "未知错误";

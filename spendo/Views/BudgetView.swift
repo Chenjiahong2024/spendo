@@ -106,10 +106,10 @@ enum SavingMethod: String, Identifiable, CaseIterable {
     // 存款周期
     var period: String {
         switch self {
-        case .fixed: return "每月"
-        case .flexible: return "灵活"
-        case .week52: return "每周"
-        case .day365: return "每天"
+        case .fixed: return "stats_month".localized
+        case .flexible: return "saving_flexible".localized
+        case .week52: return "stats_week".localized
+        case .day365: return "today".localized
         }
     }
 }

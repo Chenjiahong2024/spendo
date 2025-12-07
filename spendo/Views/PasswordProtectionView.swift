@@ -20,12 +20,12 @@ enum LockTiming: String, CaseIterable, Identifiable {
     
     var displayName: String {
         switch self {
-        case .immediately: return "立刻上锁"
-        case .oneMinute: return "1分钟"
-        case .twoMinutes: return "2分钟"
-        case .threeMinutes: return "3分钟"
-        case .fiveMinutes: return "5分钟"
-        case .tenMinutes: return "10分钟"
+        case .immediately: return "lock_immediately".localized
+        case .oneMinute: return "minutes_1".localized
+        case .twoMinutes: return "minutes_2".localized
+        case .threeMinutes: return "minutes_3".localized
+        case .fiveMinutes: return "minutes_5".localized
+        case .tenMinutes: return "minutes_10".localized
         }
     }
     
@@ -69,7 +69,7 @@ struct PasswordProtectionView: View {
                     SettingsSection {
                         // 面容解锁
                         HStack {
-                            Text("面容解锁")
+                            Text("face_unlock".localized)
                                 .font(.system(size: 16))
                                 .foregroundColor(SpendoTheme.textPrimary)
                             
@@ -91,7 +91,7 @@ struct PasswordProtectionView: View {
                         
                         // 数字密码解锁
                         HStack {
-                            Text("数字密码解锁")
+                            Text("pin_unlock".localized)
                                 .font(.system(size: 16))
                                 .foregroundColor(SpendoTheme.textPrimary)
                             
@@ -114,7 +114,7 @@ struct PasswordProtectionView: View {
                     SettingsSection {
                         Button(action: { showLockTimingPicker = true }) {
                             HStack {
-                                Text("在此时间后锁定")
+                                Text("lock_timing".localized)
                                     .font(.system(size: 16))
                                     .foregroundColor(SpendoTheme.textPrimary)
                                 
@@ -145,7 +145,7 @@ struct PasswordProtectionView: View {
                 .padding(.top, 20)
             }
         }
-        .navigationTitle("密码保护")
+        .navigationTitle("password_protection".localized)
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $showLockTimingPicker) {
             LockTimingPickerView(selectedTiming: $lockTimingRaw)

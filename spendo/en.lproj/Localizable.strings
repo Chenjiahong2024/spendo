@@ -280,3 +280,40 @@
 "view_guide" = "View Online Guide";
 "view_website" = "Visit Website";
 "ledger_title" = "My Ledger";
+
+// Onboarding
+"welcome_spendo" = "Welcome to Spendo";
+"welcome_description" = "Simple expense tracking\nMake every spending clear";
+"feature_quick_description" = "Voice input, receipt scanning and more";
+"feature_smart_description" = "Auto categorization, AI insights";
+"feature_budget_description" = "Set budgets, track spending in real-time";
+"get_started" = "Get Started";
+
+// Password Protection
+"face_unlock" = "Face ID";
+"pin_unlock" = "PIN Code";
+"lock_timing" = "Lock Timing";
+"lock_immediately" = "Immediately";
+"minutes_1" = "1 minute";
+"minutes_2" = "2 minutes";
+"minutes_3" = "3 minutes";
+"minutes_5" = "5 minutes";
+"minutes_10" = "10 minutes";
+
+// iCloud Sync
+"detecting" = "Detecting...";
+"available" = "Available";
+"syncing" = "Syncing...";
+"synced" = "Synced";
+
+// Voice Input
+"microphone_permission_required" = "Microphone and speech recognition permission required";
+"open_settings_hint" = "Please enable in Settings";
+"listening" = "Listening...";
+"tap_to_record" = "Tap to start recording";
+"recognition_result" = "Recognition Result";
+"waiting_voice_input" = "Waiting for voice input...";
+
+// Import/Export
+"import_error" = "Import Error";
+"unknown_error" = "Unknown error";
