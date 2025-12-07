@@ -29,11 +29,11 @@ struct ProfileView: View {
                                 .font(.system(size: 80))
                                 .foregroundColor(SpendoTheme.textSecondary)
                             
-                            Text("我的账本")
+                            Text("ledger_title".localized)
                                 .font(.system(size: 24, weight: .bold))
                                 .foregroundColor(SpendoTheme.textPrimary)
                             
-                            Text("记录每一笔收支")
+                            Text("my_ledger".localized)
                                 .font(.system(size: 14))
                                 .foregroundColor(SpendoTheme.textTertiary)
                         }
@@ -42,14 +42,14 @@ struct ProfileView: View {
                         // 统计卡片
                         HStack(spacing: 12) {
                             StatisticCard(
-                                title: "总交易",
+                                title: "total".localized,
                                 value: "\(transactions.count)",
                                 icon: "list.bullet.rectangle",
                                 color: SpendoTheme.primary
                             )
                             
                             StatisticCard(
-                                title: "账户数",
+                                title: "account".localized,
                                 value: "\(accounts.count)",
                                 icon: "creditcard",
                                 color: SpendoTheme.accentGreen
@@ -60,14 +60,14 @@ struct ProfileView: View {
                         // 更多统计
                         HStack(spacing: 12) {
                             StatisticCard(
-                                title: "总支出",
+                                title: "total_expense".localized,
                                 value: "¥\(String(format: "%.0f", totalExpense))",
                                 icon: "arrow.down.circle",
                                 color: SpendoTheme.accentRed
                             )
                             
                             StatisticCard(
-                                title: "总收入",
+                                title: "total_income".localized,
                                 value: "¥\(String(format: "%.0f", totalIncome))",
                                 icon: "arrow.up.circle",
                                 color: SpendoTheme.accentGreen
@@ -80,7 +80,7 @@ struct ProfileView: View {
                             NavigationLink(destination: TransactionListView()) {
                                 ProfileMenuItemContent(
                                     icon: "clock.arrow.circlepath",
-                                    title: "记账历史",
+                                    title: "recent_transactions".localized,
                                     color: .blue
                                 )
                             }
@@ -91,7 +91,7 @@ struct ProfileView: View {
                             NavigationLink(destination: AnalyticsView()) {
                                 ProfileMenuItemContent(
                                     icon: "chart.pie",
-                                    title: "消费分析",
+                                    title: "category_stats".localized,
                                     color: .purple
                                 )
                             }
@@ -113,7 +113,7 @@ struct ProfileView: View {
                             Button(action: exportData) {
                                 ProfileMenuItemContent(
                                     icon: "square.and.arrow.up",
-                                    title: "导出数据",
+                                    title: "export_data".localized,
                                     color: .green
                                 )
                             }
@@ -126,7 +126,7 @@ struct ProfileView: View {
                     }
                 }
             }
-            .navigationTitle("个人主页")
+            .navigationTitle("home".localized)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -136,8 +136,8 @@ struct ProfileView: View {
                     }
                 }
             }
-            .alert("导出数据", isPresented: $showExportAlert) {
-                Button("确定", role: .cancel) {}
+            .alert("export_data".localized, isPresented: $showExportAlert) {
+                Button("confirm".localized, role: .cancel) {}
             } message: {
                 Text(exportMessage)
             }

@@ -29,10 +29,10 @@ struct TransactionListView: View {
                         Image(systemName: "doc.text")
                             .font(.system(size: 60))
                             .foregroundColor(SpendoTheme.textTertiary)
-                        Text("无账单记录")
+                        Text("no_transactions".localized)
                             .font(.system(size: 18, weight: .medium))
                             .foregroundColor(SpendoTheme.textSecondary)
-                        Text("点击右下角 + 添加第一笔交易")
+                        Text("start_recording".localized)
                             .font(.system(size: 14))
                             .foregroundColor(SpendoTheme.textTertiary)
                         Spacer()
@@ -50,7 +50,7 @@ struct TransactionListView: View {
                                     
                                     Spacer()
                                     
-                                    Text("支出: ¥\(dailyExpense(for: date), specifier: "%.2f")")
+                                    Text("\("expense".localized): ¥\(dailyExpense(for: date), specifier: "%.2f")")
                                         .font(.system(size: 14))
                                         .foregroundColor(SpendoTheme.textSecondary)
                                     
