@@ -109,7 +109,7 @@ struct VoiceInputView: View {
                             HStack(spacing: 10) {
                                 Image(systemName: voiceRecognizer.isRecording ? "stop.fill" : "mic.fill")
                                     .font(.system(size: 18))
-                                Text(voiceRecognizer.isRecording ? "停止录音" : "开始录音")
+                                Text(voiceRecognizer.isRecording ? "stop_recording".localized : "start_recording".localized)
                                     .font(.system(size: 17, weight: .semibold))
                             }
                             .foregroundColor(.white)
@@ -122,11 +122,11 @@ struct VoiceInputView: View {
                     }
                 }
             }
-            .navigationTitle("语音记账")
+            .navigationTitle("voice_input".localized)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("取消") {
+                    Button("cancel".localized) {
                         voiceRecognizer.stopRecording()
                         dismiss()
                     }
@@ -134,7 +134,7 @@ struct VoiceInputView: View {
                 }
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("完成") {
+                    Button("done".localized) {
                         voiceRecognizer.stopRecording()
                         onRecognized(voiceRecognizer.recognizedText)
                         dismiss()

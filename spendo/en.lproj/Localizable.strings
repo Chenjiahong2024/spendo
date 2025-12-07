@@ -325,3 +325,5 @@
 "select_screenshot" = "Select screenshot to recognize";
 "select" = "Select";
 "change" = "Change";
+"stop_recording" = "Stop";
+"start_recording" = "Start";

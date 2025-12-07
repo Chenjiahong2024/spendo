@@ -325,3 +325,5 @@
 "select_screenshot" = "选择账单截图进行识别";
 "select" = "选择";
 "change" = "更换";
+"stop_recording" = "停止录音";
+"start_recording" = "开始录音";
