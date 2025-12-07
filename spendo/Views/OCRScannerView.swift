@@ -78,7 +78,7 @@ struct OCRScannerView: View {
                                 // 金额
                                 ReceiptInfoRow(
                                     icon: "yensign.circle.fill",
-                                    title: "金额",
+                                    title: "amount".localized,
                                     value: String(format: "%@%.2f", receiptData.currency == "CNY" ? "¥" : "$", receiptData.amount ?? 0),
                                     valueColor: SpendoTheme.accentGreen
                                 )
@@ -86,7 +86,7 @@ struct OCRScannerView: View {
                                 // 货币
                                 ReceiptInfoRow(
                                     icon: "dollarsign.circle.fill",
-                                    title: "货币",
+                                    title: "currency".localized,
                                     value: receiptData.currency,
                                     valueColor: SpendoTheme.textPrimary
                                 )
@@ -95,7 +95,7 @@ struct OCRScannerView: View {
                                 if let date = receiptData.date {
                                     ReceiptInfoRow(
                                         icon: "calendar.circle.fill",
-                                        title: "日期",
+                                        title: "date".localized,
                                         value: formatDate(date),
                                         valueColor: SpendoTheme.textPrimary
                                     )
@@ -105,7 +105,7 @@ struct OCRScannerView: View {
                                 if let merchant = receiptData.merchant, !merchant.isEmpty {
                                     ReceiptInfoRow(
                                         icon: "storefront.circle.fill",
-                                        title: "商家",
+                                        title: "merchant".localized,
                                         value: merchant,
                                         valueColor: SpendoTheme.textPrimary
                                     )
@@ -115,7 +115,7 @@ struct OCRScannerView: View {
                                 if let note = receiptData.note, !note.isEmpty {
                                     ReceiptInfoRow(
                                         icon: "text.bubble.fill",
-                                        title: "备注",
+                                        title: "note".localized,
                                         value: note,
                                         valueColor: SpendoTheme.textSecondary
                                     )
@@ -182,11 +182,11 @@ struct OCRScannerView: View {
                     .padding()
                 }
             }
-            .navigationTitle("扫描小票")
+            .navigationTitle("ocr_scan".localized)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("取消") {
+                    Button("cancel".localized) {
                         dismiss()
                     }
                     .foregroundColor(SpendoTheme.textPrimary)

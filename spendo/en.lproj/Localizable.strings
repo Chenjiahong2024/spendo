@@ -337,3 +337,4 @@
 // OCR
 "tap_to_scan" = "Tap button below to scan receipt";
 "recognizing" = "Recognizing...";
+"merchant" = "Merchant";
