@@ -17,10 +17,10 @@ enum SavingMethod: String, Identifiable, CaseIterable {
     
     var name: String {
         switch self {
-        case .fixed: return "定额存钱法"
-        case .flexible: return "灵活存钱法"
-        case .week52: return "52周存钱法"
-        case .day365: return "365存钱法"
+        case .fixed: return "saving_fixed".localized
+        case .flexible: return "saving_flexible".localized
+        case .week52: return "saving_week52".localized
+        case .day365: return "saving_day365".localized
         }
     }
     

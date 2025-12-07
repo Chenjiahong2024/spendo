@@ -11,11 +11,15 @@ import Charts
 
 // MARK: - 时间筛选枚举
 enum StatsPeriod: String, CaseIterable {
-    case week = "周"
-    case month = "月"
-    case year = "年"
-    case all = "全部"
-    case custom = "范围"
+    case week = "stats_week"
+    case month = "stats_month"
+    case year = "stats_year"
+    case all = "stats_all"
+    case custom = "stats_range"
+    
+    var displayName: String {
+        return rawValue.localized
+    }
 }
 
 // MARK: - 分类数据模型
@@ -73,11 +77,11 @@ struct AnalyticsViewNew: View {
                     .padding(.horizontal, 16)
                 }
             }
-            .navigationTitle("统计")
+            .navigationTitle("tab_stats".localized)
             .navigationBarTitleDisplayMode(.large)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("筛选") {
+                    Button("filter".localized) {
                         // 筛选操作
                     }
                     .foregroundColor(SpendoTheme.textPrimary)
@@ -94,7 +98,7 @@ struct AnalyticsViewNew: View {
                     selectedPeriod = period
                     updateDateRange(for: period)
                 }) {
-                    Text(period.rawValue)
+                    Text(period.displayName)
                         .font(.system(size: 14, weight: .medium))
                         .foregroundColor(selectedPeriod == period ? .white : SpendoTheme.textSecondary)
                         .frame(maxWidth: .infinity)
@@ -114,12 +118,12 @@ struct AnalyticsViewNew: View {
     // MARK: - 日期范围选择器
     private var dateRangeSelector: some View {
         HStack {
-            DateButton(date: startDate, label: "开始")
+            DateButton(date: startDate, label: "start".localized)
             
             Text("~")
                 .foregroundColor(SpendoTheme.textSecondary)
             
-            DateButton(date: endDate, label: "结束")
+            DateButton(date: endDate, label: "end".localized)
         }
     }
     
@@ -130,7 +134,7 @@ struct AnalyticsViewNew: View {
             HStack {
                 Image(systemName: "chart.bar.fill")
                     .foregroundColor(.orange)
-                Text("收支统计")
+                Text("income_expense_stats".localized)
                     .font(.system(size: 16, weight: .semibold))
                     .foregroundColor(SpendoTheme.textPrimary)
                 Spacer()
@@ -141,8 +145,8 @@ struct AnalyticsViewNew: View {
             
             // 支出和收入
             HStack(spacing: 20) {
-                StatValueColumn(label: "支出", value: totalExpense, color: SpendoTheme.textPrimary, showArrow: true)
-                StatValueColumn(label: "收入", value: totalIncome, color: SpendoTheme.textPrimary, showArrow: true)
+                StatValueColumn(label: "expense".localized, value: totalExpense, color: SpendoTheme.textPrimary, showArrow: true)
+                StatValueColumn(label: "income".localized, value: totalIncome, color: SpendoTheme.textPrimary, showArrow: true)
             }
             
             // 结余和年均支出

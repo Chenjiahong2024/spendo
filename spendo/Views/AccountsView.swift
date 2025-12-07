@@ -43,7 +43,7 @@ struct AccountsView: View {
                     .padding(.bottom, 100)
                 }
             }
-            .navigationTitle("资产")
+            .navigationTitle("tab_assets".localized)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: { showAddAccount = true }) {
@@ -88,7 +88,7 @@ struct NetWorthCard: View {
         VStack(alignment: .leading, spacing: 16) {
             // 净资产
             HStack {
-                Text("净资产")
+                Text("net_worth".localized)
                     .font(.system(size: 14))
                     .foregroundColor(SpendoTheme.textSecondary)
                 
@@ -106,7 +106,7 @@ struct NetWorthCard: View {
             // 资产和负债
             HStack(spacing: 20) {
                 HStack(spacing: 4) {
-                    Text("总资产")
+                    Text("total_assets".localized)
                         .font(.system(size: 13))
                         .foregroundColor(SpendoTheme.textTertiary)
                     Text(showBalance ? "¥\(totalAssets, specifier: "%.2f")" : "****")
@@ -115,7 +115,7 @@ struct NetWorthCard: View {
                 }
                 
                 HStack(spacing: 4) {
-                    Text("总负债")
+                    Text("total_liabilities".localized)
                         .font(.system(size: 13))
                         .foregroundColor(SpendoTheme.textTertiary)
                     Text(showBalance ? "¥\(totalLiabilities, specifier: "%.2f")" : "****")
@@ -150,7 +150,7 @@ struct IncomeExpenseCard: View {
                 }
                 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("总收入")
+                    Text("total_income".localized)
                         .font(.system(size: 12))
                         .foregroundColor(SpendoTheme.textSecondary)
                     Text("¥\(totalIncome, specifier: "%.2f")")
@@ -175,7 +175,7 @@ struct IncomeExpenseCard: View {
                 }
                 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("总支出")
+                    Text("total_expense".localized)
                         .font(.system(size: 12))
                         .foregroundColor(SpendoTheme.textSecondary)
                     Text("¥\(totalExpense, specifier: "%.2f")")
@@ -198,10 +198,10 @@ struct EmptyAccountsView: View {
             Image(systemName: "creditcard")
                 .font(.system(size: 50))
                 .foregroundColor(SpendoTheme.textTertiary)
-            Text("暂无账户")
+            Text("no_accounts".localized)
                 .font(.system(size: 16, weight: .medium))
                 .foregroundColor(SpendoTheme.textSecondary)
-            Text("点击左上角 + 添加账户")
+            Text("tap_to_add_account".localized)
                 .font(.system(size: 14))
                 .foregroundColor(SpendoTheme.textTertiary)
         }
@@ -245,7 +245,7 @@ struct AccountListSection: View {
                             Button(role: .destructive) {
                                 onDelete(account)
                             } label: {
-                                Label("删除", systemImage: "trash")
+                                Label("delete".localized, systemImage: "trash")
                             }
                         }
                     

@@ -37,7 +37,7 @@ struct AddTransactionView: View {
                 Form {
                     // 收入/支出切换
                     Section {
-                        Picker("类型", selection: $type) {
+                        Picker("type".localized, selection: $type) {
                             ForEach(TransactionType.allCases, id: \.self) { type in
                                 Text(type.displayName).tag(type)
                             }
@@ -59,7 +59,7 @@ struct AddTransactionView: View {
                         }
                         .padding(.vertical, 8)
                     } header: {
-                        Text("金额")
+                        Text("amount".localized)
                     }
                     
                     // 类别选择
@@ -78,13 +78,13 @@ struct AddTransactionView: View {
                             .padding(.vertical, 8)
                         }
                     } header: {
-                        Text("类别")
+                        Text("category".localized)
                     }
                     
                     // 账户选择
                     Section {
-                        Picker("账户", selection: $selectedAccount) {
-                            Text("未选择").tag(nil as Account?)
+                        Picker("account".localized, selection: $selectedAccount) {
+                            Text("not_selected".localized).tag(nil as Account?)
                             ForEach(accounts) { account in
                                 HStack {
                                     Image(systemName: account.iconName)
@@ -94,21 +94,21 @@ struct AddTransactionView: View {
                             }
                         }
                     } header: {
-                        Text("账户")
+                        Text("account".localized)
                     }
                     
                     // 备注
                     Section {
-                        TextField("添加备注", text: $note)
+                        TextField("add_note".localized, text: $note)
                     } header: {
-                        Text("备注")
+                        Text("note".localized)
                     }
                     
                     // 日期
                     Section {
-                        DatePicker("日期", selection: $date, displayedComponents: [.date, .hourAndMinute])
+                        DatePicker("date".localized, selection: $date, displayedComponents: [.date, .hourAndMinute])
                     } header: {
-                        Text("日期时间")
+                        Text("date_time".localized)
                     }
                     
                     // 高级功能
@@ -116,7 +116,7 @@ struct AddTransactionView: View {
                         HStack(spacing: 12) {
                             Button(action: { activeSheet = .voiceInput }) {
                                 HStack(spacing: 6) {
-                                    Text("语音记账")
+                                    Text("voice_input".localized)
                                         .font(.system(size: 15, weight: .medium))
                                     Image(systemName: "arrow.right")
                                         .font(.system(size: 13))
@@ -130,7 +130,7 @@ struct AddTransactionView: View {
                             
                             Button(action: { activeSheet = .ocrScanner }) {
                                 HStack(spacing: 6) {
-                                    Text("扫描小票")
+                                    Text("ocr_scan".localized)
                                         .font(.system(size: 15, weight: .medium))
                                     Image(systemName: "arrow.right")
                                         .font(.system(size: 13))
@@ -146,11 +146,11 @@ struct AddTransactionView: View {
                         .listRowInsets(EdgeInsets())
                         .listRowBackground(Color.clear)
                     } header: {
-                        Text("快捷输入")
+                        Text("quick_input".localized)
                     }
                     
                     Section {
-                        PrimaryGlowButton(title: "保存交易") {
+                        PrimaryGlowButton(title: "save_transaction".localized) {
                             saveTransaction()
                         }
                         .disabled(!isValid)
@@ -163,11 +163,11 @@ struct AddTransactionView: View {
                 }
                 .scrollContentBackground(.hidden)
             }
-            .navigationTitle("记一笔")
+            .navigationTitle("add_transaction".localized)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("取消") {
+                    Button("cancel".localized) {
                         dismiss()
                     }
                 }
