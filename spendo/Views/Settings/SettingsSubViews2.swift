@@ -750,44 +750,40 @@ struct FAQItem: View {
 
 // MARK: - 使用指南视图
 struct UserGuideView: View {
-    let guides = [
-        ("快速开始", "了解Spendo的基本功能"),
-        ("记账技巧", "高效记账的小技巧"),
-        ("数据分析", "如何利用统计功能"),
-        ("预算管理", "设置和管理预算"),
-        ("数据安全", "保护你的数据"),
-    ]
+    // GitHub Pages 使用指南网址（基于 GitHub 仓库 Chenjiahong2024/spendo）
+    // 启用 Pages 后，会是：https://chenjiahong2024.github.io/spendo/
+    private let userGuideURL = URL(string: "https://chenjiahong2024.github.io/spendo/")!
     
     var body: some View {
         ZStack {
             SpendoTheme.background.ignoresSafeArea()
             
-            ScrollView {
-                VStack(spacing: 12) {
-                    ForEach(guides, id: \.0) { guide in
-                        HStack {
-                            VStack(alignment: .leading, spacing: 4) {
-                                Text(guide.0)
-                                    .font(.system(size: 16, weight: .medium))
-                                    .foregroundColor(SpendoTheme.textPrimary)
-                                
-                                Text(guide.1)
-                                    .font(.system(size: 13))
-                                    .foregroundColor(SpendoTheme.textSecondary)
-                            }
-                            
-                            Spacer()
-                            
-                            Image(systemName: "chevron.right")
-                                .foregroundColor(SpendoTheme.textTertiary)
-                        }
-                        .padding(16)
-                        .background(SpendoTheme.cardBackground)
-                        .cornerRadius(12)
+            VStack(spacing: 16) {
+                Text("guide_description".localized)
+                    .font(.system(size: 15))
+                    .foregroundColor(SpendoTheme.textSecondary)
+                    .multilineTextAlignment(.leading)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                
+                Link(destination: userGuideURL) {
+                    HStack {
+                        Image(systemName: "safari")
+                            .font(.system(size: 18, weight: .medium))
+                        Text("view_guide".localized)
+                            .font(.system(size: 16, weight: .semibold))
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 14, weight: .semibold))
                     }
+                    .foregroundColor(SpendoTheme.textPrimary)
+                    .padding(16)
+                    .background(SpendoTheme.cardBackground)
+                    .cornerRadius(12)
                 }
-                .padding(16)
+                
+                Spacer()
             }
+            .padding(16)
         }
         .navigationTitle("user_guide".localized)
         .navigationBarTitleDisplayMode(.inline)
