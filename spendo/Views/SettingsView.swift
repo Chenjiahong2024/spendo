@@ -33,176 +33,176 @@ struct SettingsView: View {
                         // 安全与同步
                         SettingsSection {
                             NavigationLink(destination: PasswordProtectionView()) {
-                                SettingsRowContent(icon: "lock.fill", iconColor: .blue, title: "密码保护")
+                                SettingsRowContent(icon: "lock.fill", iconColor: .blue, title: "password_protection".localized)
                             }
                         }
                         
                         SettingsSection {
                             NavigationLink(destination: iCloudSyncView()) {
-                                SettingsRowContent(icon: "icloud.fill", iconColor: .blue, title: "iCloud云同步")
+                                SettingsRowContent(icon: "icloud.fill", iconColor: .blue, title: "icloud_sync".localized)
                             }
                         }
                         
                         // 数据导入导出
                         SettingsSection {
                             NavigationLink(destination: BillImportView()) {
-                                SettingsRowContent(icon: "square.and.arrow.down.fill", iconColor: .orange, title: "账单导入")
+                                SettingsRowContent(icon: "square.and.arrow.down.fill", iconColor: .orange, title: "bill_import".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: BillExportView()) {
-                                SettingsRowContent(icon: "square.and.arrow.up.fill", iconColor: .yellow, title: "账单导出")
+                                SettingsRowContent(icon: "square.and.arrow.up.fill", iconColor: .yellow, title: "bill_export".localized)
                             }
                         }
                         
                         // 智能功能
                         SettingsSection {
                             NavigationLink(destination: ScreenshotImportView()) {
-                                SettingsRowContent(icon: "photo.fill", iconColor: .green, title: "截图导入")
+                                SettingsRowContent(icon: "photo.fill", iconColor: .green, title: "screenshot_import".localized)
                             }
                         }
                         
                         SettingsSection {
                             NavigationLink(destination: SmartBookkeepingView()) {
-                                SettingsRowContent(icon: "brain.head.profile", iconColor: .purple, title: "智能记账")
+                                SettingsRowContent(icon: "brain.head.profile", iconColor: .purple, title: "smart_accounting".localized)
                             }
                         }
                         
                         SettingsSection {
                             NavigationLink(destination: DynamicIslandView()) {
-                                SettingsRowContent(icon: "platter.filled.top.and.arrow.up.iphone", iconColor: .purple, title: "灵动岛管理")
+                                SettingsRowContent(icon: "platter.filled.top.and.arrow.up.iphone", iconColor: .purple, title: "dynamic_island".localized)
                             }
                         }
                         
                         // 管理功能
                         SettingsSection {
                             NavigationLink(destination: CycleManagementView()) {
-                                SettingsRowContent(icon: "arrow.trianglehead.2.clockwise.rotate.90", iconColor: .green, title: "周期管理")
+                                SettingsRowContent(icon: "arrow.trianglehead.2.clockwise.rotate.90", iconColor: .green, title: "cycle_management".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: InstallmentManagementView()) {
-                                SettingsRowContent(icon: "square.split.2x2.fill", iconColor: .purple, title: "分期管理")
+                                SettingsRowContent(icon: "square.split.2x2.fill", iconColor: .purple, title: "installment_management".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: CategoryManagementView()) {
-                                SettingsRowContent(icon: "square.grid.2x2.fill", iconColor: .blue, title: "分类管理")
+                                SettingsRowContent(icon: "square.grid.2x2.fill", iconColor: .blue, title: "category_management".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: TagManagementView()) {
-                                SettingsRowContent(icon: "tag.fill", iconColor: .cyan, title: "标签管理")
+                                SettingsRowContent(icon: "tag.fill", iconColor: .cyan, title: "tag_management".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: BudgetSettingsView()) {
-                                SettingsRowContent(icon: "chart.bar.fill", iconColor: .orange, title: "预算功能")
+                                SettingsRowContent(icon: "chart.bar.fill", iconColor: .orange, title: "budget_feature".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: ReimbursementView()) {
-                                SettingsRowContent(icon: "doc.text.fill", iconColor: .blue, title: "报销功能")
+                                SettingsRowContent(icon: "doc.text.fill", iconColor: .blue, title: "reimbursement".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: CurrencySettingView()) {
-                                SettingsRowContent(icon: "dollarsign.circle.fill", iconColor: .purple, title: "货币和汇率")
+                                SettingsRowContent(icon: "dollarsign.circle.fill", iconColor: .purple, title: "currency_exchange".localized)
                             }
                         }
                         
                         // 设置项
                         SettingsSection {
                             NavigationLink(destination: AssetSettingsView()) {
-                                SettingsRowContent(icon: "creditcard.fill", iconColor: .teal, title: "资产设置")
+                                SettingsRowContent(icon: "creditcard.fill", iconColor: .teal, title: "asset_settings".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: StatisticsSettingsView()) {
-                                SettingsRowContent(icon: "chart.pie.fill", iconColor: .indigo, title: "统计设置")
+                                SettingsRowContent(icon: "chart.pie.fill", iconColor: .indigo, title: "statistics_settings".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: TemplateSettingsView()) {
-                                SettingsRowContent(icon: "doc.on.doc.fill", iconColor: .purple, title: "模板设置")
+                                SettingsRowContent(icon: "doc.on.doc.fill", iconColor: .purple, title: "template_settings".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: RefundSettingsView()) {
-                                SettingsRowContent(icon: "arrow.uturn.backward.circle.fill", iconColor: .blue, title: "退款设置")
+                                SettingsRowContent(icon: "arrow.uturn.backward.circle.fill", iconColor: .blue, title: "refund_settings".localized)
                             }
                         }
                         
                         // 开关功能
                         SettingsSection {
-                            SettingsToggleRow(icon: "books.vertical.fill", iconColor: .indigo, title: "多账本功能", isOn: $multiBookEnabled)
+                            SettingsToggleRow(icon: "books.vertical.fill", iconColor: .indigo, title: "multi_book".localized, isOn: $multiBookEnabled)
                             SettingsDivider()
-                            SettingsToggleRow(icon: "banknote.fill", iconColor: .green, title: "存钱功能", isOn: $savingEnabled)
+                            SettingsToggleRow(icon: "banknote.fill", iconColor: .green, title: "saving_feature".localized, isOn: $savingEnabled)
                         }
                         
                         // 位置与图片
                         SettingsSection {
                             NavigationLink(destination: LocationSettingsView()) {
-                                SettingsRowContent(icon: "location.fill", iconColor: .blue, title: "记账位置")
+                                SettingsRowContent(icon: "location.fill", iconColor: .blue, title: "location_settings".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: BillImageSettingsView()) {
-                                SettingsRowContent(icon: "photo.on.rectangle.angled", iconColor: .pink, title: "账单图片")
+                                SettingsRowContent(icon: "photo.on.rectangle.angled", iconColor: .pink, title: "bill_image".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: TimeSettingsView()) {
-                                SettingsRowContent(icon: "clock.fill", iconColor: .blue, title: "时间设置")
+                                SettingsRowContent(icon: "clock.fill", iconColor: .blue, title: "time_settings".localized)
                             }
                         }
                         
                         // 地图与备份
                         SettingsSection {
                             NavigationLink(destination: BookkeepingMapView()) {
-                                SettingsRowContent(icon: "map.fill", iconColor: .purple, title: "记账地图")
+                                SettingsRowContent(icon: "map.fill", iconColor: .purple, title: "bookkeeping_map".localized)
                             }
                         }
                         
                         SettingsSection {
                             NavigationLink(destination: BackupRestoreView()) {
-                                SettingsRowContent(icon: "arrow.triangle.2.circlepath", iconColor: .green, title: "备份与恢复")
+                                SettingsRowContent(icon: "arrow.triangle.2.circlepath", iconColor: .green, title: "backup_restore".localized)
                             }
                         }
                         
                         // 个性化
                         SettingsSection {
                             NavigationLink(destination: EfficiencySettingsView()) {
-                                SettingsRowContent(icon: "bolt.fill", iconColor: .teal, title: "效率")
+                                SettingsRowContent(icon: "bolt.fill", iconColor: .teal, title: "efficiency".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: PersonalizationView()) {
-                                SettingsRowContent(icon: "paintpalette.fill", iconColor: .blue, title: "个性化")
+                                SettingsRowContent(icon: "paintpalette.fill", iconColor: .blue, title: "personalization".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: ThemeSettingView()) {
-                                SettingsRowContent(icon: "sun.max.fill", iconColor: .orange, title: "外观")
+                                SettingsRowContent(icon: "sun.max.fill", iconColor: .orange, title: "theme".localized)
                             }
                         }
                         
                         // 帮助
                         SettingsSection {
                             NavigationLink(destination: FAQView()) {
-                                SettingsRowContent(icon: "questionmark.circle.fill", iconColor: .blue, title: "常见问题")
+                                SettingsRowContent(icon: "questionmark.circle.fill", iconColor: .blue, title: "faq".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: UserGuideView()) {
-                                SettingsRowContent(icon: "book.fill", iconColor: .indigo, title: "使用指南")
+                                SettingsRowContent(icon: "book.fill", iconColor: .indigo, title: "user_guide".localized)
                             }
                         }
                         
                         SettingsSection {
                             NavigationLink(destination: HelpFeedbackView()) {
-                                SettingsRowContent(icon: "bubble.left.and.bubble.right.fill", iconColor: .green, title: "帮助与反馈")
+                                SettingsRowContent(icon: "bubble.left.and.bubble.right.fill", iconColor: .green, title: "help_feedback".localized)
                             }
                             SettingsDivider()
                             NavigationLink(destination: ShareAppView()) {
-                                SettingsRowContent(icon: "person.2.fill", iconColor: .blue, title: "分享给朋友")
+                                SettingsRowContent(icon: "person.2.fill", iconColor: .blue, title: "share_app".localized)
                             }
                         }
                         
                         // 语言
                         SettingsSection {
                             NavigationLink(destination: LanguageSettingsView()) {
-                                SettingsRowWithValueContent(icon: "globe", iconColor: .green, title: "语言设置", value: "跟随系统")
+                                SettingsRowWithValueContent(icon: "globe", iconColor: .green, title: "language_settings".localized, value: "follow_system".localized)
                             }
                         }
                         
                         // 版本信息
-                        Text("版本 1.0.0")
+                        Text("\("version".localized) 1.0.0")
                             .font(.system(size: 12))
                             .foregroundColor(SpendoTheme.textTertiary)
                             .padding(.top, 20)
@@ -212,7 +212,7 @@ struct SettingsView: View {
                     .padding(.top, 10)
                 }
             }
-            .navigationTitle("设置")
+            .navigationTitle("settings".localized)
             .navigationBarTitleDisplayMode(.inline)
         }
     }

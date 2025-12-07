@@ -51,7 +51,7 @@ struct LedgerTitleView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             // 账本名称
-            Text("默认账本")
+            Text("default_ledger".localized)
                 .font(.system(size: 28, weight: .bold))
                 .foregroundColor(SpendoTheme.textPrimary)
             
@@ -117,7 +117,7 @@ struct ExpenseSummaryCard: View {
                     .font(.system(size: 16))
                     .foregroundColor(SpendoTheme.accentRed)
                 
-                Text("总支出")
+                Text("total_expense".localized)
                     .font(.system(size: 14))
                     .foregroundColor(SpendoTheme.textSecondary)
                 
@@ -134,7 +134,7 @@ struct ExpenseSummaryCard: View {
             // 收入和月结余
             HStack(spacing: 20) {
                 HStack(spacing: 4) {
-                    Text("总收入")
+                    Text("total_income".localized)
                         .font(.system(size: 13))
                         .foregroundColor(SpendoTheme.textTertiary)
                     Text("¥\(totalIncome, specifier: "%.2f")")
@@ -143,7 +143,7 @@ struct ExpenseSummaryCard: View {
                 }
                 
                 HStack(spacing: 4) {
-                    Text("月结余")
+                    Text("month_balance".localized)
                         .font(.system(size: 13))
                         .foregroundColor(SpendoTheme.textTertiary)
                     Text("\(monthBalance >= 0 ? "" : "-")¥\(abs(monthBalance), specifier: "%.2f")")
@@ -175,7 +175,7 @@ struct DateSectionHeader: View {
             Spacer()
             
             HStack(spacing: 4) {
-                Text("支出: ¥\(totalExpense, specifier: "%.2f")")
+                Text("\("expense".localized): ¥\(totalExpense, specifier: "%.2f")")
                     .font(.system(size: 14))
                     .foregroundColor(SpendoTheme.textSecondary)
                 
