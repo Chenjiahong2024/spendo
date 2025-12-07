@@ -343,16 +343,18 @@ struct DynamicIslandView: View {
     let dataTypes = ["支出", "收入", "结余"]
     
     // 计算本月数据
-    private var monthStats: (expense: Double, income: Double, balance: Double) {
+    private var monthStats: (expense: Double, income: Double, balance: Double, todayExpense: Double, transactionCount: Int) {
         let calendar = Calendar.current
         let now = Date()
         let startOfMonth = calendar.date(from: calendar.dateComponents([.year, .month], from: now))!
+        let startOfToday = calendar.startOfDay(for: now)
         
         let monthTransactions = transactions.filter { $0.date >= startOfMonth }
         let expense = monthTransactions.filter { $0.type == .expense }.reduce(0) { $0 + $1.amount }
         let income = monthTransactions.filter { $0.type == .income }.reduce(0) { $0 + $1.amount }
+        let todayExpense = transactions.filter { $0.date >= startOfToday && $0.type == .expense }.reduce(0) { $0 + $1.amount }
         
-        return (expense, income, income - expense)
+        return (expense, income, income - expense, todayExpense, monthTransactions.count)
     }
     
     var body: some View {
@@ -489,7 +491,10 @@ struct DynamicIslandView: View {
                                 expense: monthStats.expense,
                                 income: monthStats.income,
                                 balance: monthStats.balance,
-                                remainingBudget: monthlyBudget - monthStats.expense
+                                remainingBudget: monthlyBudget - monthStats.expense,
+                                budgetTotal: monthlyBudget,
+                                todayExpense: monthStats.todayExpense,
+                                transactionCount: monthStats.transactionCount
                             )
                             .padding(.horizontal, 16)
                             .padding(.bottom, 16)
@@ -553,7 +558,11 @@ struct DynamicIslandView: View {
                 monthIncome: monthStats.income,
                 monthBalance: monthStats.balance,
                 remainingBudget: monthlyBudget - monthStats.expense,
-                periodName: "本月"
+                budgetTotal: monthlyBudget,
+                todayExpense: monthStats.todayExpense,
+                transactionCount: monthStats.transactionCount,
+                periodName: "本月",
+                currencySymbol: "¥"
             )
         } else {
             // 结束实时活动
@@ -570,68 +579,176 @@ struct LiveActivityPreviewCard: View {
     let income: Double
     let balance: Double
     let remainingBudget: Double
+    let budgetTotal: Double
+    let todayExpense: Double
+    let transactionCount: Int
+    
+    // 预算进度
+    private var budgetProgress: Double {
+        guard budgetTotal > 0 else { return 0 }
+        return min(expense / budgetTotal, 1.0)
+    }
+    
+    private var budgetStatusColor: Color {
+        if budgetProgress < 0.6 { return .green }
+        else if budgetProgress < 0.85 { return .orange }
+        else { return .red }
+    }
     
     var body: some View {
-        VStack(spacing: 12) {
-            // 标题
-            HStack {
-                Text("收支总览")
-                    .font(.system(size: 14, weight: .semibold))
+        VStack(spacing: 14) {
+            // 标题行
+            HStack(spacing: 8) {
+                ZStack {
+                    Circle()
+                        .fill(LinearGradient(
+                            colors: [.orange, .red],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ))
+                        .frame(width: 24, height: 24)
+                    
+                    Image(systemName: "yensign")
+                        .font(.system(size: 12, weight: .bold))
+                        .foregroundColor(.white)
+                }
+                
+                Text("Spendo")
+                    .font(.system(size: 15, weight: .bold))
                     .foregroundColor(.white)
+                
                 Spacer()
+                
                 Text("本月")
-                    .font(.system(size: 12))
-                    .foregroundColor(.gray)
+                    .font(.system(size: 11, weight: .medium))
+                    .foregroundColor(.white.opacity(0.6))
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 3)
+                    .background(Color.white.opacity(0.15))
+                    .cornerRadius(6)
             }
             
-            // 收支数据
+            // 主要收支数据
             HStack(spacing: 12) {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("本月支出")
-                        .font(.system(size: 11))
-                        .foregroundColor(.gray)
+                    HStack(spacing: 4) {
+                        Image(systemName: "arrow.up.circle.fill")
+                            .font(.system(size: 10))
+                            .foregroundColor(.red)
+                        Text("本月支出")
+                            .font(.system(size: 11))
+                            .foregroundColor(.white.opacity(0.6))
+                    }
                     Text("¥\(expense, specifier: "%.2f")")
-                        .font(.system(size: 15, weight: .bold))
+                        .font(.system(size: 18, weight: .bold))
                         .foregroundColor(.white)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("本月收入")
-                        .font(.system(size: 11))
-                        .foregroundColor(.gray)
+                    HStack(spacing: 4) {
+                        Image(systemName: "arrow.down.circle.fill")
+                            .font(.system(size: 10))
+                            .foregroundColor(.green)
+                        Text("本月收入")
+                            .font(.system(size: 11))
+                            .foregroundColor(.white.opacity(0.6))
+                    }
                     Text("¥\(income, specifier: "%.2f")")
-                        .font(.system(size: 15, weight: .bold))
+                        .font(.system(size: 18, weight: .bold))
                         .foregroundColor(.green)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
             
-            // 结余和预算
-            HStack(spacing: 12) {
-                VStack(alignment: .leading, spacing: 4) {
+            // 预算进度条
+            if budgetTotal > 0 {
+                VStack(spacing: 4) {
+                    HStack {
+                        Text("预算使用")
+                            .font(.system(size: 11))
+                            .foregroundColor(.white.opacity(0.6))
+                        Spacer()
+                        Text("\(Int(budgetProgress * 100))%")
+                            .font(.system(size: 11, weight: .semibold))
+                            .foregroundColor(budgetStatusColor)
+                    }
+                    
+                    GeometryReader { geometry in
+                        ZStack(alignment: .leading) {
+                            RoundedRectangle(cornerRadius: 3)
+                                .fill(Color.white.opacity(0.2))
+                                .frame(height: 6)
+                            
+                            RoundedRectangle(cornerRadius: 3)
+                                .fill(LinearGradient(
+                                    colors: budgetProgress < 0.6
+                                        ? [.green, .green.opacity(0.8)]
+                                        : budgetProgress < 0.85
+                                            ? [.orange, .yellow]
+                                            : [.red, .orange],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                ))
+                                .frame(width: geometry.size.width * budgetProgress, height: 6)
+                        }
+                    }
+                    .frame(height: 6)
+                }
+            }
+            
+            // 底部统计行
+            HStack(spacing: 0) {
+                VStack(spacing: 2) {
+                    Text("今日支出")
+                        .font(.system(size: 10))
+                        .foregroundColor(.white.opacity(0.5))
+                    Text("¥\(todayExpense, specifier: "%.0f")")
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundColor(.orange)
+                }
+                .frame(maxWidth: .infinity)
+                
+                Rectangle()
+                    .fill(Color.white.opacity(0.2))
+                    .frame(width: 1, height: 28)
+                
+                VStack(spacing: 2) {
                     Text("本月结余")
-                        .font(.system(size: 11))
-                        .foregroundColor(.gray)
-                    Text("\(balance >= 0 ? "" : "-")¥\(abs(balance), specifier: "%.2f")")
-                        .font(.system(size: 14, weight: .semibold))
+                        .font(.system(size: 10))
+                        .foregroundColor(.white.opacity(0.5))
+                    Text("\(balance >= 0 ? "+" : "")¥\(abs(balance), specifier: "%.0f")")
+                        .font(.system(size: 13, weight: .semibold))
                         .foregroundColor(balance >= 0 ? .green : .red)
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
+                .frame(maxWidth: .infinity)
                 
-                VStack(alignment: .leading, spacing: 4) {
-                    Text("剩余月预算")
-                        .font(.system(size: 11))
-                        .foregroundColor(.gray)
-                    Text("\(remainingBudget >= 0 ? "" : "-")¥\(abs(remainingBudget), specifier: "%.2f")")
-                        .font(.system(size: 14, weight: .semibold))
-                        .foregroundColor(remainingBudget >= 0 ? .green : .red)
+                Rectangle()
+                    .fill(Color.white.opacity(0.2))
+                    .frame(width: 1, height: 28)
+                
+                VStack(spacing: 2) {
+                    Text("交易笔数")
+                        .font(.system(size: 10))
+                        .foregroundColor(.white.opacity(0.5))
+                    Text("\(transactionCount)笔")
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundColor(.white)
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
+                .frame(maxWidth: .infinity)
             }
+            .padding(.vertical, 8)
+            .background(Color.white.opacity(0.08))
+            .cornerRadius(10)
         }
         .padding(14)
-        .background(Color.black)
+        .background(
+            LinearGradient(
+                colors: [Color(red: 0.1, green: 0.1, blue: 0.15), Color(red: 0.05, green: 0.05, blue: 0.1)],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+        )
         .cornerRadius(16)
     }
 }

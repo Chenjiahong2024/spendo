@@ -2,7 +2,7 @@
 //  LiveActivityManager.swift
 //  Spendo
 //
-//  灵动岛实时活动管理器
+//  灵动岛实时活动管理器 - 完善版
 //
 
 import Foundation
@@ -14,14 +14,32 @@ import Combine
 // MARK: - 实时活动属性定义（需要与Widget Extension共享）
 struct SpendoActivityAttributes: ActivityAttributes {
     public struct ContentState: Codable, Hashable {
-        var monthExpense: Double
-        var monthIncome: Double
-        var monthBalance: Double
-        var remainingBudget: Double
-        var lastUpdateTime: Date
+        var monthExpense: Double      // 本月支出
+        var monthIncome: Double       // 本月收入
+        var monthBalance: Double      // 本月结余
+        var remainingBudget: Double   // 剩余预算
+        var budgetTotal: Double       // 总预算
+        var todayExpense: Double      // 今日支出
+        var transactionCount: Int     // 本月交易笔数
+        var lastUpdateTime: Date      // 最后更新时间
+        
+        // 计算预算使用百分比
+        var budgetProgress: Double {
+            guard budgetTotal > 0 else { return 0 }
+            return min(monthExpense / budgetTotal, 1.0)
+        }
+        
+        // 预算状态颜色
+        var budgetStatusColor: Color {
+            let progress = budgetProgress
+            if progress < 0.6 { return .green }
+            else if progress < 0.85 { return .orange }
+            else { return .red }
+        }
     }
     
-    var periodName: String
+    var periodName: String      // 时间段名称
+    var currencySymbol: String  // 货币符号
 }
 
 // MARK: - 实时活动管理器
@@ -57,7 +75,11 @@ class LiveActivityManager: ObservableObject {
         monthIncome: Double,
         monthBalance: Double,
         remainingBudget: Double,
-        periodName: String = "本月"
+        budgetTotal: Double = 0,
+        todayExpense: Double = 0,
+        transactionCount: Int = 0,
+        periodName: String = "本月",
+        currencySymbol: String = "¥"
     ) {
         guard isSupported else {
             print("设备不支持实时活动")
@@ -75,7 +97,11 @@ class LiveActivityManager: ObservableObject {
                     monthIncome: monthIncome,
                     monthBalance: monthBalance,
                     remainingBudget: remainingBudget,
-                    periodName: periodName
+                    budgetTotal: budgetTotal,
+                    todayExpense: todayExpense,
+                    transactionCount: transactionCount,
+                    periodName: periodName,
+                    currencySymbol: currencySymbol
                 )
             }
         } else {
@@ -85,7 +111,11 @@ class LiveActivityManager: ObservableObject {
                     monthIncome: monthIncome,
                     monthBalance: monthBalance,
                     remainingBudget: remainingBudget,
-                    periodName: periodName
+                    budgetTotal: budgetTotal,
+                    todayExpense: todayExpense,
+                    transactionCount: transactionCount,
+                    periodName: periodName,
+                    currencySymbol: currencySymbol
                 )
             }
         }
@@ -96,14 +126,24 @@ class LiveActivityManager: ObservableObject {
         monthIncome: Double,
         monthBalance: Double,
         remainingBudget: Double,
-        periodName: String
+        budgetTotal: Double,
+        todayExpense: Double,
+        transactionCount: Int,
+        periodName: String,
+        currencySymbol: String
     ) async {
-        let attributes = SpendoActivityAttributes(periodName: periodName)
+        let attributes = SpendoActivityAttributes(
+            periodName: periodName,
+            currencySymbol: currencySymbol
+        )
         let contentState = SpendoActivityAttributes.ContentState(
             monthExpense: monthExpense,
             monthIncome: monthIncome,
             monthBalance: monthBalance,
             remainingBudget: remainingBudget,
+            budgetTotal: budgetTotal,
+            todayExpense: todayExpense,
+            transactionCount: transactionCount,
             lastUpdateTime: Date()
         )
         
@@ -132,7 +172,10 @@ class LiveActivityManager: ObservableObject {
         monthExpense: Double,
         monthIncome: Double,
         monthBalance: Double,
-        remainingBudget: Double
+        remainingBudget: Double,
+        budgetTotal: Double = 0,
+        todayExpense: Double = 0,
+        transactionCount: Int = 0
     ) async {
         guard let activity = currentActivity else {
             print("没有正在运行的实时活动")
@@ -144,6 +187,9 @@ class LiveActivityManager: ObservableObject {
             monthIncome: monthIncome,
             monthBalance: monthBalance,
             remainingBudget: remainingBudget,
+            budgetTotal: budgetTotal,
+            todayExpense: todayExpense,
+            transactionCount: transactionCount,
             lastUpdateTime: Date()
         )
         
@@ -165,6 +211,9 @@ class LiveActivityManager: ObservableObject {
             monthIncome: 0,
             monthBalance: 0,
             remainingBudget: 0,
+            budgetTotal: 0,
+            todayExpense: 0,
+            transactionCount: 0,
             lastUpdateTime: Date()
         )
         
@@ -191,10 +240,15 @@ class LiveActivityManager: ObservableObject {
 // MARK: - 与交易数据集成的扩展
 extension LiveActivityManager {
     /// 根据交易数据更新实时活动
-    func updateFromTransactions(_ transactions: [Transaction], budget: Double = 0) async {
+    func updateFromTransactions(
+        _ transactions: [Transaction],
+        budget: Double = 0,
+        currencySymbol: String = "¥"
+    ) async {
         let calendar = Calendar.current
         let now = Date()
         let startOfMonth = calendar.date(from: calendar.dateComponents([.year, .month], from: now))!
+        let startOfToday = calendar.startOfDay(for: now)
         
         // 计算本月数据
         let monthTransactions = transactions.filter { $0.date >= startOfMonth }
@@ -207,16 +261,69 @@ extension LiveActivityManager {
             .filter { $0.type == .income }
             .reduce(0) { $0 + $1.amount }
         
+        // 计算今日支出
+        let todayExpense = transactions
+            .filter { $0.date >= startOfToday && $0.type == .expense }
+            .reduce(0) { $0 + $1.amount }
+        
         let monthBalance = monthIncome - monthExpense
-        let remainingBudget = budget - monthExpense
+        let remainingBudget = budget > 0 ? budget - monthExpense : monthBalance
+        let transactionCount = monthTransactions.count
         
         if isActivityRunning {
             await updateActivity(
                 monthExpense: monthExpense,
                 monthIncome: monthIncome,
                 monthBalance: monthBalance,
-                remainingBudget: remainingBudget
+                remainingBudget: remainingBudget,
+                budgetTotal: budget,
+                todayExpense: todayExpense,
+                transactionCount: transactionCount
             )
         }
+    }
+    
+    /// 启动并从交易数据初始化实时活动
+    func startFromTransactions(
+        _ transactions: [Transaction],
+        budget: Double = 0,
+        currencySymbol: String = "¥"
+    ) {
+        let calendar = Calendar.current
+        let now = Date()
+        let startOfMonth = calendar.date(from: calendar.dateComponents([.year, .month], from: now))!
+        let startOfToday = calendar.startOfDay(for: now)
+        
+        // 计算本月数据
+        let monthTransactions = transactions.filter { $0.date >= startOfMonth }
+        
+        let monthExpense = monthTransactions
+            .filter { $0.type == .expense }
+            .reduce(0) { $0 + $1.amount }
+        
+        let monthIncome = monthTransactions
+            .filter { $0.type == .income }
+            .reduce(0) { $0 + $1.amount }
+        
+        // 计算今日支出
+        let todayExpense = transactions
+            .filter { $0.date >= startOfToday && $0.type == .expense }
+            .reduce(0) { $0 + $1.amount }
+        
+        let monthBalance = monthIncome - monthExpense
+        let remainingBudget = budget > 0 ? budget - monthExpense : monthBalance
+        let transactionCount = monthTransactions.count
+        
+        startActivity(
+            monthExpense: monthExpense,
+            monthIncome: monthIncome,
+            monthBalance: monthBalance,
+            remainingBudget: remainingBudget,
+            budgetTotal: budget,
+            todayExpense: todayExpense,
+            transactionCount: transactionCount,
+            periodName: "本月",
+            currencySymbol: currencySymbol
+        )
     }
 }
