@@ -513,7 +513,7 @@ struct DynamicIslandView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("灵动岛管理")
+        .navigationTitle("dynamic_island".localized)
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $showTimePeriodPicker) {
             OptionPickerSheet(
@@ -731,7 +731,7 @@ struct CycleManagementView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("周期管理")
+        .navigationTitle("cycle_management".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -767,7 +767,7 @@ struct InstallmentManagementView: View {
                 .listStyle(.plain)
             }
         }
-        .navigationTitle("分期管理")
+        .navigationTitle("installment_management".localized)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
@@ -859,7 +859,7 @@ struct TagManagementView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("标签管理")
+        .navigationTitle("tag_management".localized)
         .navigationBarTitleDisplayMode(.inline)
         .alert("添加标签", isPresented: $showAddAlert) {
             TextField("标签名称", text: $newTag)
@@ -995,7 +995,7 @@ struct BudgetSettingsView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("预算功能")
+        .navigationTitle("budget_feature".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -1030,7 +1030,7 @@ struct ReimbursementView: View {
                 .listStyle(.plain)
             }
         }
-        .navigationTitle("报销功能")
+        .navigationTitle("reimbursement".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
