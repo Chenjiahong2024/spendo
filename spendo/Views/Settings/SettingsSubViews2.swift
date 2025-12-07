@@ -915,13 +915,52 @@ struct ShareAppView: View {
 // MARK: - 语言设置视图
 struct LanguageSettingsView: View {
     @AppStorage("appLanguage") private var appLanguage = "system"
+    @ObservedObject private var languageManager = LanguageManager.shared
     
-    let languages = [
-        ("system", "跟随系统"),
-        ("zh-Hans", "简体中文"),
-        ("zh-Hant", "繁體中文"),
-        ("en", "English"),
-        ("ja", "日本語"),
+    // 按区域分组的语言列表
+    let languageGroups: [(String, [(String, String)])] = [
+        ("常用", [
+            ("system", "跟随系统 / System"),
+            ("zh-Hans", "简体中文"),
+            ("zh-Hant", "繁體中文"),
+            ("en", "English"),
+        ]),
+        ("东亚", [
+            ("ja", "日本語"),
+            ("ko", "한국어"),
+        ]),
+        ("欧洲", [
+            ("fr", "Français"),
+            ("de", "Deutsch"),
+            ("es", "Español"),
+            ("pt", "Português"),
+            ("it", "Italiano"),
+            ("nl", "Nederlands"),
+            ("pl", "Polski"),
+            ("ru", "Русский"),
+            ("tr", "Türkçe"),
+            ("uk", "Українська"),
+            ("el", "Ελληνικά"),
+        ]),
+        ("中东/南亚", [
+            ("ar", "العربية"),
+            ("hi", "हिन्दी"),
+            ("fa", "فارسی"),
+            ("he", "עברית"),
+        ]),
+        ("东南亚", [
+            ("th", "ไทย"),
+            ("vi", "Tiếng Việt"),
+            ("id", "Bahasa Indonesia"),
+            ("ms", "Bahasa Melayu"),
+            ("fil", "Filipino"),
+        ]),
+        ("北欧", [
+            ("sv", "Svenska"),
+            ("nb", "Norsk"),
+            ("da", "Dansk"),
+            ("fi", "Suomi"),
+        ]),
     ]
     
     var body: some View {
@@ -929,36 +968,57 @@ struct LanguageSettingsView: View {
             SpendoTheme.background.ignoresSafeArea()
             
             ScrollView {
-                VStack(spacing: 0) {
-                    ForEach(languages, id: \.0) { lang in
-                        Button(action: { appLanguage = lang.0 }) {
-                            HStack {
-                                Text(lang.1)
-                                    .foregroundColor(SpendoTheme.textPrimary)
-                                
-                                Spacer()
-                                
-                                if appLanguage == lang.0 {
-                                    Image(systemName: "checkmark")
-                                        .foregroundColor(SpendoTheme.primary)
+                VStack(spacing: 16) {
+                    ForEach(languageGroups, id: \.0) { group in
+                        VStack(alignment: .leading, spacing: 0) {
+                            // 分组标题
+                            Text(group.0)
+                                .font(.system(size: 13, weight: .medium))
+                                .foregroundColor(SpendoTheme.textSecondary)
+                                .padding(.horizontal, 16)
+                                .padding(.bottom, 8)
+                            
+                            // 语言列表
+                            VStack(spacing: 0) {
+                                ForEach(group.1, id: \.0) { lang in
+                                    Button(action: { selectLanguage(lang.0) }) {
+                                        HStack {
+                                            Text(lang.1)
+                                                .foregroundColor(SpendoTheme.textPrimary)
+                                            
+                                            Spacer()
+                                            
+                                            if appLanguage == lang.0 {
+                                                Image(systemName: "checkmark")
+                                                    .foregroundColor(SpendoTheme.primary)
+                                            }
+                                        }
+                                        .padding(16)
+                                    }
+                                    
+                                    if lang.0 != group.1.last?.0 {
+                                        Divider()
+                                            .background(SpendoTheme.textTertiary.opacity(0.2))
+                                            .padding(.leading, 16)
+                                    }
                                 }
                             }
-                            .padding(16)
-                        }
-                        
-                        if lang.0 != languages.last?.0 {
-                            Divider()
-                                .background(SpendoTheme.textTertiary.opacity(0.2))
-                                .padding(.leading, 16)
+                            .background(SpendoTheme.cardBackground)
+                            .cornerRadius(12)
                         }
                     }
                 }
-                .background(SpendoTheme.cardBackground)
-                .cornerRadius(12)
                 .padding(16)
             }
         }
         .navigationTitle("语言设置")
         .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    private func selectLanguage(_ code: String) {
+        appLanguage = code
+        if let language = AppLanguage(rawValue: code) {
+            languageManager.currentLanguage = language
+        }
     }
 }
