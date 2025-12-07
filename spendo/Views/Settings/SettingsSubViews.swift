@@ -228,7 +228,7 @@ struct ScreenshotImportView: View {
                 .padding(.bottom, 20)
             }
         }
-        .navigationTitle("截图导入")
+        .navigationTitle("screenshot_import".localized)
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $showImagePicker) {
             SettingsImagePicker(image: $selectedImage)
@@ -318,7 +318,7 @@ struct SmartBookkeepingView: View {
                 .padding(16)
             }
         }
-        .navigationTitle("智能记账")
+        .navigationTitle("smart_accounting".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
