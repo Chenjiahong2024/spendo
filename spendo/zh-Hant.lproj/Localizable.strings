@@ -1,0 +1,281 @@
+/* 繁體中文 */
+
+// 通用
+"cancel" = "取消";
+"confirm" = "確定";
+"save" = "儲存";
+"delete" = "刪除";
+"edit" = "編輯";
+"done" = "完成";
+"back" = "返回";
+"settings" = "設定";
+"search" = "搜尋";
+
+// TabBar
+"tab_ledger" = "帳本";
+"tab_assets" = "資產";
+"tab_savings" = "存錢";
+"tab_stats" = "統計";
+"tab_settings" = "設定";
+
+// 交易
+"expense" = "支出";
+"income" = "收入";
+"amount" = "金額";
+"category" = "類別";
+"account" = "帳戶";
+"note" = "備註";
+"date" = "日期";
+"date_time" = "日期時間";
+"type" = "類型";
+"add_transaction" = "記一筆";
+"add_note" = "新增備註";
+"select_category" = "選擇類別";
+"select_account" = "選擇帳戶";
+"not_selected" = "未選擇";
+"save_transaction" = "儲存交易";
+"quick_input" = "快速輸入";
+
+// 設定
+"language" = "語言";
+"language_settings" = "語言設定";
+"currency" = "貨幣";
+"primary_currency" = "主幣種";
+"theme" = "外觀";
+"personalization" = "個人化";
+"theme_color" = "主題色";
+"tabbar_style" = "TabBar 樣式";
+"system_style" = "系統樣式";
+"custom_style" = "自訂";
+"icon_style" = "圖示風格";
+"filled" = "填充";
+"outline" = "線條";
+"animation" = "動畫效果";
+"enable_animation" = "啟用動畫";
+"animation_hint" = "關閉後將停用介面過渡動畫";
+"restart_required" = "切換後需重啟App生效";
+"preview" = "預覽";
+"theme_button_preview" = "主題按鈕效果";
+
+// 統計
+"total_expense" = "總支出";
+"total_income" = "總收入";
+"balance" = "結餘";
+"this_month" = "本月";
+"this_week" = "本週";
+"today" = "今日";
+"this_year" = "本年";
+"expense_trend" = "支出趨勢";
+"category_stats" = "分類統計";
+"no_data" = "暫無資料";
+
+// 帳戶
+"cash" = "現金";
+"bank_card" = "銀行卡";
+"credit_card" = "信用卡";
+"alipay" = "支付寶";
+"wechat_pay" = "微信支付";
+"total_assets" = "總資產";
+"total_liabilities" = "總負債";
+"net_assets" = "淨資產";
+"add_account" = "新增帳戶";
+
+// 類別 - 支出
+"food" = "餐飲";
+"transport" = "交通";
+"shopping" = "購物";
+"entertainment" = "娛樂";
+"housing" = "住房";
+"medical" = "醫療";
+"education" = "教育";
+"travel" = "旅行";
+"other" = "其他";
+"daily" = "日用";
+"communication" = "通訊";
+"fitness" = "健身";
+"beauty" = "美容";
+"pet" = "寵物";
+
+// 類別 - 收入
+"salary" = "薪資";
+"bonus" = "獎金";
+"investment" = "投資";
+"part_time" = "兼職";
+"gift" = "禮金";
+"refund" = "退款";
+"interest" = "利息";
+
+// 預算
+"budget" = "預算";
+"monthly_budget" = "月預算";
+"remaining_budget" = "剩餘預算";
+"over_budget" = "超出預算";
+"set_budget" = "設定預算";
+"budget_progress" = "預算進度";
+
+// 時間
+"yesterday" = "昨天";
+"days_ago" = "%d天前";
+"just_now" = "剛剛";
+"minutes_ago" = "%d分鐘前";
+"hours_ago" = "%d小時前";
+
+// 其他功能
+"icloud_sync" = "iCloud 雲端同步";
+"password_protection" = "密碼保護";
+"bill_import" = "帳單匯入";
+"bill_export" = "帳單匯出";
+"smart_accounting" = "智慧記帳";
+"voice_input" = "語音輸入";
+"ocr_scan" = "掃描收據";
+"about" = "關於";
+"version" = "版本";
+"rate_app" = "給個好評";
+"feedback" = "意見回饋";
+"privacy_policy" = "隱私政策";
+"terms_of_service" = "服務條款";
+
+// 匯率
+"exchange_rate" = "匯率";
+"live_rate" = "即時匯率";
+"last_update" = "上次更新";
+"update_rate" = "更新匯率";
+"rate_updated" = "匯率已更新";
+"rate_update_failed" = "更新失敗，請檢查網路";
+"never_updated" = "從未更新";
+"rate_source" = "匯率資料來自歐洲央行，每小時自動更新";
+
+// 語言
+"follow_system" = "跟隨系統";
+"traditional_chinese" = "繁體中文";
+"english" = "English";
+"japanese" = "日本語";
+"korean" = "한국어";
+"language_change_hint" = "切換語言後需要重啟應用才能完全生效";
+
+// 設定功能
+"screenshot_import" = "截圖匯入";
+"dynamic_island" = "靈動島管理";
+"cycle_management" = "週期管理";
+"installment_management" = "分期管理";
+"category_management" = "分類管理";
+"tag_management" = "標籤管理";
+"budget_feature" = "預算功能";
+"reimbursement" = "報銷功能";
+"currency_exchange" = "貨幣和匯率";
+"asset_settings" = "資產設定";
+"statistics_settings" = "統計設定";
+"template_settings" = "範本設定";
+"refund_settings" = "退款設定";
+"multi_book" = "多帳本功能";
+"saving_feature" = "存錢功能";
+"personalization" = "個人化";
+"share_app" = "分享給朋友";
+
+// 首頁
+"home" = "首頁";
+"recent_transactions" = "最近交易";
+"view_all" = "查看全部";
+"no_transactions" = "暫無交易記錄";
+"start_recording" = "開始記錄第一筆";
+"monthly_overview" = "本月概覽";
+
+// 更多設定
+"location_settings" = "記帳位置";
+"bill_image" = "帳單圖片";
+"time_settings" = "時間設定";
+"bookkeeping_map" = "記帳地圖";
+"backup_restore" = "備份與還原";
+"efficiency" = "效率";
+"faq" = "常見問題";
+"user_guide" = "使用指南";
+"help_feedback" = "幫助與回饋";
+
+// 帳本界面
+"default_ledger" = "預設帳本";
+"income_expense_calendar" = "收支日曆";
+"total_expense" = "總支出";
+"total_income" = "總收入";
+"month_balance" = "月結餘";
+"no_transactions_this_month" = "本月無交易記錄";
+"tap_plus_to_start" = "點擊右下角 + 開始記帳";
+"sort_by_time" = "按時間排序";
+"sort_by_amount" = "按金額排序";
+"sort_by_category" = "按類別排序";
+"search" = "搜尋";
+"show_expense_only" = "只顯示支出";
+"show_income_only" = "只顯示收入";
+"export_data" = "匯出資料";
+
+// 資產界面
+"net_worth" = "淨資產";
+"total_assets" = "總資產";
+"total_liabilities" = "總負債";
+"add_account" = "新增帳戶";
+"no_accounts" = "暫無帳戶";
+"tap_to_add_account" = "點擊左上角 + 新增帳戶";
+
+// 存錢界面
+"savings" = "存錢";
+"saving_stats" = "存錢統計";
+"saving_reminder" = "存錢提醒";
+"sort_order" = "排序方式";
+"hide_completed" = "隱藏已完成";
+"show_completed" = "顯示已完成";
+"no_data" = "暫無資料";
+"sort_by_progress" = "按進度排序";
+"total_budget" = "總預算";
+
+// 統計界面
+"stats_week" = "週";
+"stats_month" = "月";
+"stats_year" = "年";
+"stats_all" = "全部";
+"stats_range" = "範圍";
+"filter" = "篩選";
+"start" = "開始";
+"end" = "結束";
+"income_expense_stats" = "收支統計";
+"balance" = "結餘";
+"yearly_avg_expense" = "年均支出";
+"reimbursement_stats" = "報銷統計";
+"pending_reimbursement" = "待報銷";
+"reimbursed" = "報銷入帳";
+"transfer_stats" = "流轉統計";
+"repayment" = "還款";
+"receipt" = "收款";
+"expense_category_detail" = "支出分類詳情";
+"income_category_detail" = "收入分類詳情";
+"all_categories" = "全部分類";
+"no_expense_category_data" = "暫無支出分類資料";
+"no_income_category_data" = "暫無收入分類資料";
+"collapse" = "收起";
+"expand_all" = "展開全部";
+"bill_summary" = "帳單匯總";
+"show_balance_color" = "顯示結餘顏色";
+"total" = "總計";
+"yearly_avg" = "年均";
+"share_current_page" = "分享當前頁面";
+
+// 存錢方法
+"saving_fixed" = "定額存錢法";
+"saving_flexible" = "靈活存錢法";
+"saving_week52" = "52週存錢法";
+"saving_day365" = "365存錢法";
+
+// 個人主頁
+"my_ledger" = "記錄每一筆收支";
+
+// 使用指南
+"guide_description" = "查看線上文檔了解如何使用Spendo";
+"quick_start_guide" = "快速開始";
+"view_readme" = "查看README文檔";
+"detailed_guide" = "詳細指南";
+"view_wiki" = "查看Wiki文檔";
+"source_code" = "原始碼";
+"view_github" = "查看GitHub倉庫";
+"open_source_note" = "Spendo 是一個開源項目";
+
+"view_guide" = "查看線上指南";
+"view_website" = "訪問官方網站";
+"ledger_title" = "我的帳本";

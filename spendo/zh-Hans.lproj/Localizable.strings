@@ -1,0 +1,282 @@
+/* 简体中文 */
+
+// 通用
+"cancel" = "取消";
+"confirm" = "确定";
+"save" = "保存";
+"delete" = "删除";
+"edit" = "编辑";
+"done" = "完成";
+"back" = "返回";
+"settings" = "设置";
+"search" = "搜索";
+
+// TabBar
+"tab_ledger" = "账本";
+"tab_assets" = "资产";
+"tab_savings" = "存钱";
+"tab_stats" = "统计";
+"tab_settings" = "设置";
+
+// 交易
+"expense" = "支出";
+"income" = "收入";
+"amount" = "金额";
+"category" = "类别";
+"account" = "账户";
+"note" = "备注";
+"date" = "日期";
+"date_time" = "日期时间";
+"type" = "类型";
+"add_transaction" = "记一笔";
+"add_note" = "添加备注";
+"select_category" = "选择类别";
+"select_account" = "选择账户";
+"not_selected" = "未选择";
+"save_transaction" = "保存交易";
+"quick_input" = "快捷输入";
+
+// 设置
+"language" = "语言";
+"language_settings" = "语言设置";
+"currency" = "货币";
+"primary_currency" = "主币种";
+"theme" = "外观";
+"personalization" = "个性化";
+"theme_color" = "主题色";
+"tabbar_style" = "TabBar 样式";
+"system_style" = "系统样式";
+"custom_style" = "自定义";
+"icon_style" = "图标风格";
+"filled" = "填充";
+"outline" = "线条";
+"animation" = "动画效果";
+"enable_animation" = "启用动画";
+"animation_hint" = "关闭后将禁用界面过渡动画";
+"restart_required" = "切换后需重启App生效";
+"preview" = "预览";
+"theme_button_preview" = "主题按钮效果";
+
+// 统计
+"total_expense" = "总支出";
+"total_income" = "总收入";
+"balance" = "结余";
+"this_month" = "本月";
+"this_week" = "本周";
+"today" = "今日";
+"this_year" = "本年";
+"expense_trend" = "支出趋势";
+"category_stats" = "分类统计";
+"no_data" = "暂无数据";
+
+// 账户
+"cash" = "现金";
+"bank_card" = "银行卡";
+"credit_card" = "信用卡";
+"alipay" = "支付宝";
+"wechat_pay" = "微信支付";
+"total_assets" = "总资产";
+"total_liabilities" = "总负债";
+"net_assets" = "净资产";
+"add_account" = "添加账户";
+
+// 类别 - 支出
+"food" = "餐饮";
+"transport" = "交通";
+"shopping" = "购物";
+"entertainment" = "娱乐";
+"housing" = "住房";
+"medical" = "医疗";
+"education" = "教育";
+"travel" = "旅行";
+"other" = "其他";
+"daily" = "日用";
+"communication" = "通讯";
+"fitness" = "健身";
+"beauty" = "美容";
+"pet" = "宠物";
+
+// 类别 - 收入
+"salary" = "工资";
+"bonus" = "奖金";
+"investment" = "投资";
+"part_time" = "兼职";
+"gift" = "礼金";
+"refund" = "退款";
+"interest" = "利息";
+
+// 预算
+"budget" = "预算";
+"monthly_budget" = "月预算";
+"remaining_budget" = "剩余预算";
+"over_budget" = "超出预算";
+"set_budget" = "设置预算";
+"budget_progress" = "预算进度";
+
+// 时间
+"yesterday" = "昨天";
+"days_ago" = "%d天前";
+"just_now" = "刚刚";
+"minutes_ago" = "%d分钟前";
+"hours_ago" = "%d小时前";
+
+// 其他功能
+"icloud_sync" = "iCloud 云同步";
+"password_protection" = "密码保护";
+"bill_import" = "账单导入";
+"bill_export" = "账单导出";
+"smart_accounting" = "智能记账";
+"voice_input" = "语音输入";
+"ocr_scan" = "扫描小票";
+"about" = "关于";
+"version" = "版本";
+"rate_app" = "给个好评";
+"feedback" = "意见反馈";
+"privacy_policy" = "隐私政策";
+"terms_of_service" = "服务条款";
+
+// 汇率
+"exchange_rate" = "汇率";
+"live_rate" = "实时汇率";
+"last_update" = "上次更新";
+"update_rate" = "更新汇率";
+"rate_updated" = "汇率已更新";
+"rate_update_failed" = "更新失败，请检查网络";
+"never_updated" = "从未更新";
+"rate_source" = "汇率数据来自欧洲央行，每小时自动更新";
+
+// 语言
+"follow_system" = "跟随系统";
+"simplified_chinese" = "简体中文";
+"traditional_chinese" = "繁體中文";
+"english" = "English";
+"japanese" = "日本語";
+"korean" = "한국어";
+"language_change_hint" = "切换语言后需要重启应用才能完全生效";
+
+// 设置功能
+"screenshot_import" = "截图导入";
+"dynamic_island" = "灵动岛管理";
+"cycle_management" = "周期管理";
+"installment_management" = "分期管理";
+"category_management" = "分类管理";
+"tag_management" = "标签管理";
+"budget_feature" = "预算功能";
+"reimbursement" = "报销功能";
+"currency_exchange" = "货币和汇率";
+"asset_settings" = "资产设置";
+"statistics_settings" = "统计设置";
+"template_settings" = "模板设置";
+"refund_settings" = "退款设置";
+"multi_book" = "多账本功能";
+"saving_feature" = "存钱功能";
+"personalization" = "个性化";
+"share_app" = "分享给朋友";
+
+// 首页
+"home" = "首页";
+"recent_transactions" = "最近交易";
+"view_all" = "查看全部";
+"no_transactions" = "暂无交易记录";
+"start_recording" = "开始记录第一笔";
+"monthly_overview" = "本月概览";
+
+// 更多设置
+"location_settings" = "记账位置";
+"bill_image" = "账单图片";
+"time_settings" = "时间设置";
+"bookkeeping_map" = "记账地图";
+"backup_restore" = "备份与恢复";
+"efficiency" = "效率";
+"faq" = "常见问题";
+"user_guide" = "使用指南";
+"help_feedback" = "帮助与反馈";
+
+// 账本界面
+"default_ledger" = "默认账本";
+"income_expense_calendar" = "收支日历";
+"total_expense" = "总支出";
+"total_income" = "总收入";
+"month_balance" = "月结余";
+"no_transactions_this_month" = "本月无交易记录";
+"tap_plus_to_start" = "点击右下角 + 开始记账";
+"sort_by_time" = "按时间排序";
+"sort_by_amount" = "按金额排序";
+"sort_by_category" = "按类别排序";
+"search" = "搜索";
+"show_expense_only" = "只显示支出";
+"show_income_only" = "只显示收入";
+"export_data" = "导出数据";
+
+// 资产界面
+"net_worth" = "净资产";
+"total_assets" = "总资产";
+"total_liabilities" = "总负债";
+"add_account" = "添加账户";
+"no_accounts" = "暂无账户";
+"tap_to_add_account" = "点击左上角 + 添加账户";
+
+// 存钱界面
+"savings" = "存钱";
+"saving_stats" = "存钱统计";
+"saving_reminder" = "存钱提醒";
+"sort_order" = "排序方式";
+"hide_completed" = "隐藏已完成";
+"show_completed" = "显示已完成";
+"no_data" = "暂无数据";
+"sort_by_progress" = "按进度排序";
+"total_budget" = "总预算";
+
+// 统计界面
+"stats_week" = "周";
+"stats_month" = "月";
+"stats_year" = "年";
+"stats_all" = "全部";
+"stats_range" = "范围";
+"filter" = "筛选";
+"start" = "开始";
+"end" = "结束";
+"income_expense_stats" = "收支统计";
+"balance" = "结余";
+"yearly_avg_expense" = "年均支出";
+"reimbursement_stats" = "报销统计";
+"pending_reimbursement" = "待报销";
+"reimbursed" = "报销入账";
+"transfer_stats" = "流转统计";
+"repayment" = "还款";
+"receipt" = "收款";
+"expense_category_detail" = "支出分类详情";
+"income_category_detail" = "收入分类详情";
+"all_categories" = "全部分类";
+"no_expense_category_data" = "暂无支出分类数据";
+"no_income_category_data" = "暂无收入分类数据";
+"collapse" = "收起";
+"expand_all" = "展开全部";
+"bill_summary" = "账单汇总";
+"show_balance_color" = "显示结余颜色";
+"total" = "总计";
+"yearly_avg" = "年均";
+"share_current_page" = "分享当前页面";
+
+// 存钱方法
+"saving_fixed" = "定额存钱法";
+"saving_flexible" = "灵活存钱法";
+"saving_week52" = "52周存钱法";
+"saving_day365" = "365存钱法";
+
+// 个人主页
+"my_ledger" = "记录每一笔收支";
+
+// 使用指南
+"guide_description" = "查看在线文档了解如何使用Spendo";
+"quick_start_guide" = "快速开始";
+"view_readme" = "查看README文档";
+"detailed_guide" = "详细指南";
+"view_wiki" = "查看Wiki文档";
+"source_code" = "源代码";
+"view_github" = "查看GitHub仓库";
+"open_source_note" = "Spendo 是一个开源项目";
+
+"view_guide" = "查看在线指南";
+"view_website" = "访问官方网站";
+"ledger_title" = "我的账本";

@@ -1,0 +1,282 @@
+/* 日本語 */
+
+// 共通
+"cancel" = "キャンセル";
+"confirm" = "確認";
+"save" = "保存";
+"delete" = "削除";
+"edit" = "編集";
+"done" = "完了";
+"back" = "戻る";
+"settings" = "設定";
+"search" = "検索";
+
+// タブバー
+"tab_ledger" = "家計簿";
+"tab_assets" = "資産";
+"tab_savings" = "貯金";
+"tab_stats" = "統計";
+"tab_settings" = "設定";
+
+// 取引
+"expense" = "支出";
+"income" = "収入";
+"amount" = "金額";
+"category" = "カテゴリ";
+"account" = "口座";
+"note" = "メモ";
+"date" = "日付";
+"date_time" = "日付・時刻";
+"type" = "種類";
+"add_transaction" = "記帳";
+"add_note" = "メモを追加";
+"select_category" = "カテゴリを選択";
+"select_account" = "口座を選択";
+"not_selected" = "未選択";
+"save_transaction" = "保存";
+"quick_input" = "クイック入力";
+
+// 設定
+"language" = "言語";
+"language_settings" = "言語設定";
+"currency" = "通貨";
+"primary_currency" = "メイン通貨";
+"theme" = "外観";
+"personalization" = "カスタマイズ";
+"theme_color" = "テーマカラー";
+"tabbar_style" = "タブバースタイル";
+"system_style" = "システム";
+"custom_style" = "カスタム";
+"icon_style" = "アイコンスタイル";
+"filled" = "塗りつぶし";
+"outline" = "アウトライン";
+"animation" = "アニメーション";
+"enable_animation" = "アニメーションを有効化";
+"animation_hint" = "オフにすると画面遷移アニメーションが無効になります";
+"restart_required" = "変更を適用するには再起動が必要です";
+"preview" = "プレビュー";
+"theme_button_preview" = "テーマボタンプレビュー";
+
+// 統計
+"total_expense" = "総支出";
+"total_income" = "総収入";
+"balance" = "残高";
+"this_month" = "今月";
+"this_week" = "今週";
+"today" = "今日";
+"this_year" = "今年";
+"expense_trend" = "支出の推移";
+"category_stats" = "カテゴリ別統計";
+"no_data" = "データなし";
+
+// 口座
+"cash" = "現金";
+"bank_card" = "銀行口座";
+"credit_card" = "クレジットカード";
+"alipay" = "Alipay";
+"wechat_pay" = "WeChat Pay";
+"total_assets" = "総資産";
+"total_liabilities" = "総負債";
+"net_assets" = "純資産";
+"add_account" = "口座を追加";
+
+// カテゴリ - 支出
+"food" = "食費";
+"transport" = "交通費";
+"shopping" = "買い物";
+"entertainment" = "娯楽";
+"housing" = "住居";
+"medical" = "医療";
+"education" = "教育";
+"travel" = "旅行";
+"other" = "その他";
+"daily" = "日用品";
+"communication" = "通信費";
+"fitness" = "フィットネス";
+"beauty" = "美容";
+"pet" = "ペット";
+
+// カテゴリ - 収入
+"salary" = "給料";
+"bonus" = "ボーナス";
+"investment" = "投資";
+"part_time" = "副業";
+"gift" = "お祝い";
+"refund" = "払い戻し";
+"interest" = "利子";
+
+// 予算
+"budget" = "予算";
+"monthly_budget" = "月間予算";
+"remaining_budget" = "残り予算";
+"over_budget" = "予算超過";
+"set_budget" = "予算を設定";
+"budget_progress" = "予算進捗";
+
+// 時間
+"yesterday" = "昨日";
+"days_ago" = "%d日前";
+"just_now" = "たった今";
+"minutes_ago" = "%d分前";
+"hours_ago" = "%d時間前";
+
+// その他の機能
+"icloud_sync" = "iCloud同期";
+"password_protection" = "パスワード保護";
+"bill_import" = "取引をインポート";
+"bill_export" = "取引をエクスポート";
+"smart_accounting" = "スマート記帳";
+"voice_input" = "音声入力";
+"ocr_scan" = "レシートスキャン";
+"about" = "情報";
+"version" = "バージョン";
+"rate_app" = "アプリを評価";
+"feedback" = "フィードバック";
+"privacy_policy" = "プライバシーポリシー";
+"terms_of_service" = "利用規約";
+
+// 為替レート
+"exchange_rate" = "為替レート";
+"live_rate" = "リアルタイムレート";
+"last_update" = "最終更新";
+"update_rate" = "レートを更新";
+"rate_updated" = "レートが更新されました";
+"rate_update_failed" = "更新に失敗しました。ネットワークを確認してください";
+"never_updated" = "未更新";
+"rate_source" = "為替レートはECBから取得、毎時自動更新";
+
+// 言語
+"follow_system" = "システムに従う";
+"simplified_chinese" = "简体中文";
+"traditional_chinese" = "繁體中文";
+"english" = "English";
+"japanese" = "日本語";
+"korean" = "한국어";
+"language_change_hint" = "言語を完全に適用するにはアプリを再起動してください";
+
+// 設定機能
+"screenshot_import" = "スクリーンショット取り込み";
+"dynamic_island" = "Dynamic Island";
+"cycle_management" = "周期管理";
+"installment_management" = "分割管理";
+"category_management" = "カテゴリ管理";
+"tag_management" = "タグ管理";
+"budget_feature" = "予算機能";
+"reimbursement" = "経費精算";
+"currency_exchange" = "通貨と為替";
+"asset_settings" = "資産設定";
+"statistics_settings" = "統計設定";
+"template_settings" = "テンプレート";
+"refund_settings" = "払い戻し設定";
+"multi_book" = "マルチ帳簿";
+"saving_feature" = "貯金機能";
+"personalization" = "カスタマイズ";
+"share_app" = "アプリを共有";
+
+// ホーム
+"home" = "ホーム";
+"recent_transactions" = "最近の取引";
+"view_all" = "すべて見る";
+"no_transactions" = "取引がありません";
+"start_recording" = "記録を開始";
+"monthly_overview" = "今月の概要";
+
+// その他の設定
+"location_settings" = "位置設定";
+"bill_image" = "帳票画像";
+"time_settings" = "時間設定";
+"bookkeeping_map" = "記帳マップ";
+"backup_restore" = "バックアップと復元";
+"efficiency" = "効率";
+"faq" = "よくある質問";
+"user_guide" = "使い方ガイド";
+"help_feedback" = "ヘルプとフィードバック";
+
+// 帳簿画面
+"default_ledger" = "デフォルト帳簿";
+"income_expense_calendar" = "収支カレンダー";
+"total_expense" = "総支出";
+"total_income" = "総収入";
+"month_balance" = "月残高";
+"no_transactions_this_month" = "今月の取引はありません";
+"tap_plus_to_start" = "+ をタップして記録を開始";
+"sort_by_time" = "時間順";
+"sort_by_amount" = "金額順";
+"sort_by_category" = "カテゴリ順";
+"search" = "検索";
+"show_expense_only" = "支出のみ表示";
+"show_income_only" = "収入のみ表示";
+"export_data" = "データをエクスポート";
+
+// 資産画面
+"net_worth" = "純資産";
+"total_assets" = "総資産";
+"total_liabilities" = "総負債";
+"add_account" = "口座を追加";
+"no_accounts" = "口座なし";
+"tap_to_add_account" = "+ をタップして口座を追加";
+
+// 貯金画面
+"savings" = "貯金";
+"saving_stats" = "貯金統計";
+"saving_reminder" = "貯金リマインダー";
+"sort_order" = "並び替え";
+"hide_completed" = "完了を隠す";
+"show_completed" = "完了を表示";
+"no_data" = "データなし";
+"sort_by_progress" = "進捗順";
+"total_budget" = "総予算";
+
+// 統計画面
+"stats_week" = "週";
+"stats_month" = "月";
+"stats_year" = "年";
+"stats_all" = "全て";
+"stats_range" = "範囲";
+"filter" = "フィルター";
+"start" = "開始";
+"end" = "終了";
+"income_expense_stats" = "収支統計";
+"balance" = "残高";
+"yearly_avg_expense" = "年間平均";
+"reimbursement_stats" = "経費精算";
+"pending_reimbursement" = "申請中";
+"reimbursed" = "精算済み";
+"transfer_stats" = "振替統計";
+"repayment" = "返済";
+"receipt" = "入金";
+"expense_category_detail" = "支出カテゴリ詳細";
+"income_category_detail" = "収入カテゴリ詳細";
+"all_categories" = "全カテゴリ";
+"no_expense_category_data" = "支出データなし";
+"no_income_category_data" = "収入データなし";
+"collapse" = "閉じる";
+"expand_all" = "すべて表示";
+"bill_summary" = "サマリー";
+"show_balance_color" = "色を表示";
+"total" = "合計";
+"yearly_avg" = "年間平均";
+"share_current_page" = "ページを共有";
+
+// 貯金方法
+"saving_fixed" = "定額貯金";
+"saving_flexible" = "フレキシブル貯金";
+"saving_week52" = "52週チャレンジ";
+"saving_day365" = "365日チャレンジ";
+
+// プロフィール
+"my_ledger" = "すべての取引を記録";
+
+// ユーザーガイド
+"guide_description" = "Spendoの使い方はオンラインドキュメントをご覧ください";
+"quick_start_guide" = "クイックスタート";
+"view_readme" = "READMEを見る";
+"detailed_guide" = "詳細ガイド";
+"view_wiki" = "Wikiを見る";
+"source_code" = "ソースコード";
+"view_github" = "GitHubで見る";
+"open_source_note" = "Spendoはオープンソースプロジェクトです";
+
+"view_guide" = "オンラインガイドを見る";
+"view_website" = "ウェブサイトを見る";
+"ledger_title" = "私の帳簿";

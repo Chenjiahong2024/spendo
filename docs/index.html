@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spendo - 极简智能记账 App</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, system-ui, "PingFang SC", "Helvetica Neue", Arial, sans-serif; background: #0f172a; color: #e5e7eb; line-height: 1.6; }
+    a { color: #38bdf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page { max-width: 960px; margin: 0 auto; padding: 40px 16px 64px; }
+    .hero { text-align: left; margin-bottom: 40px; }
+    .badge { display: inline-block; padding: 4px 10px; border-radius: 999px; background: rgba(56,189,248,0.08); color: #7dd3fc; font-size: 12px; margin-bottom: 16px; }
+    h1 { font-size: 32px; font-weight: 700; margin-bottom: 12px; color: #f9fafb; }
+    .subtitle { font-size: 16px; color: #9ca3af; max-width: 520px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 32px; }
+    .card { background: rgba(15,23,42,0.9); border-radius: 16px; padding: 20px; border: 1px solid rgba(148,163,184,0.3); box-shadow: 0 18px 45px rgba(15,23,42,0.7); }
+    .card h2 { font-size: 18px; margin-bottom: 8px; color: #e5e7eb; }
+    .card p { font-size: 14px; color: #9ca3af; }
+    .list { margin-top: 8px; font-size: 14px; color: #9ca3af; }
+    .list li { margin-left: 18px; margin-bottom: 4px; }
+    .footer { margin-top: 40px; font-size: 13px; color: #6b7280; border-top: 1px solid rgba(55,65,81,0.7); padding-top: 16px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; }
+    .links { display: flex; gap: 16px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="badge">Spendo · 极简智能记账 App</div>
+      <h1>用最简单的方式，掌控每一笔收支</h1>
+      <p class="subtitle">
+        Spendo 专为 iOS 打造，支持语音记账、小票扫描、智能分类、多账户和预算管理，
+        让记账变得轻松、有趣又安全。
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>快速记账</h2>
+        <p>三种高效方式，随时随地记录收支。</p>
+        <ul class="list">
+          <li>手动输入：几步完成一笔收支记录</li>
+          <li>语音记账：说出「午饭 50 块」即可自动识别</li>
+          <li>扫描小票：拍照识别金额，省去手工输入</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>智能分析与预算</h2>
+        <p>用清晰的图表和预算工具，看懂你的钱花到哪里去了。</p>
+        <ul class="list">
+          <li>收支统计饼图与趋势折线图</li>
+          <li>支持按周、月、年多维度分析</li>
+          <li>总预算与分类预算、超支提醒</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>多账户与多币种</h2>
+        <p>管理现金、银行卡以及电子钱包，资产一目了然。</p>
+        <ul class="list">
+          <li>支持多账户记账与账户间转账记录</li>
+          <li>多币种支持，适合境外出行和多币种消费</li>
+          <li>自动计算账户余额，资产结构更清晰</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>本地存储，重视隐私</h2>
+        <p>Spendo 不依赖云端服务器，所有数据仅保存在你的设备本地。</p>
+        <ul class="list">
+          <li>记账数据保存在本机，不上传到远程服务器</li>
+          <li>使用系统级加密能力和面容 ID 保护隐私</li>
+          <li>无需注册账号，即装即用</li>
+        </ul>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div>© 2025 Spendo. 保留所有权利。</div>
+      <div class="links">
+        <a href="privacy.html">隐私政策</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,282 @@
+/* 한국어 */
+
+// 공통
+"cancel" = "취소";
+"confirm" = "확인";
+"save" = "저장";
+"delete" = "삭제";
+"edit" = "편집";
+"done" = "완료";
+"back" = "뒤로";
+"settings" = "설정";
+"search" = "검색";
+
+// 탭바
+"tab_ledger" = "가계부";
+"tab_assets" = "자산";
+"tab_savings" = "저축";
+"tab_stats" = "통계";
+"tab_settings" = "설정";
+
+// 거래
+"expense" = "지출";
+"income" = "수입";
+"amount" = "금액";
+"category" = "카테고리";
+"account" = "계좌";
+"note" = "메모";
+"date" = "날짜";
+"date_time" = "날짜 및 시간";
+"type" = "유형";
+"add_transaction" = "기록";
+"add_note" = "메모 추가";
+"select_category" = "카테고리 선택";
+"select_account" = "계좌 선택";
+"not_selected" = "선택 안함";
+"save_transaction" = "저장";
+"quick_input" = "빠른 입력";
+
+// 설정
+"language" = "언어";
+"language_settings" = "언어 설정";
+"currency" = "통화";
+"primary_currency" = "기본 통화";
+"theme" = "외관";
+"personalization" = "개인화";
+"theme_color" = "테마 색상";
+"tabbar_style" = "탭바 스타일";
+"system_style" = "시스템 스타일";
+"custom_style" = "사용자 정의";
+"icon_style" = "아이콘 스타일";
+"filled" = "채우기";
+"outline" = "윤곽선";
+"animation" = "애니메이션";
+"enable_animation" = "애니메이션 활성화";
+"animation_hint" = "끄면 화면 전환 애니메이션이 비활성화됩니다";
+"restart_required" = "변경 사항을 적용하려면 앱을 다시 시작하세요";
+"preview" = "미리보기";
+"theme_button_preview" = "테마 버튼 미리보기";
+
+// 통계
+"total_expense" = "총 지출";
+"total_income" = "총 수입";
+"balance" = "잔액";
+"this_month" = "이번 달";
+"this_week" = "이번 주";
+"today" = "오늘";
+"this_year" = "올해";
+"expense_trend" = "지출 추세";
+"category_stats" = "카테고리별 통계";
+"no_data" = "데이터 없음";
+
+// 계좌
+"cash" = "현금";
+"bank_card" = "은행 카드";
+"credit_card" = "신용카드";
+"alipay" = "알리페이";
+"wechat_pay" = "위챗페이";
+"total_assets" = "총 자산";
+"total_liabilities" = "총 부채";
+"net_assets" = "순 자산";
+"add_account" = "계좌 추가";
+
+// 카테고리 - 지출
+"food" = "식비";
+"transport" = "교통";
+"shopping" = "쇼핑";
+"entertainment" = "오락";
+"housing" = "주거";
+"medical" = "의료";
+"education" = "교육";
+"travel" = "여행";
+"other" = "기타";
+"daily" = "생활용품";
+"communication" = "통신";
+"fitness" = "운동";
+"beauty" = "미용";
+"pet" = "반려동물";
+
+// 카테고리 - 수입
+"salary" = "급여";
+"bonus" = "상여금";
+"investment" = "투자";
+"part_time" = "부업";
+"gift" = "선물";
+"refund" = "환불";
+"interest" = "이자";
+
+// 예산
+"budget" = "예산";
+"monthly_budget" = "월 예산";
+"remaining_budget" = "남은 예산";
+"over_budget" = "예산 초과";
+"set_budget" = "예산 설정";
+"budget_progress" = "예산 진행률";
+
+// 시간
+"yesterday" = "어제";
+"days_ago" = "%d일 전";
+"just_now" = "방금";
+"minutes_ago" = "%d분 전";
+"hours_ago" = "%d시간 전";
+
+// 기타 기능
+"icloud_sync" = "iCloud 동기화";
+"password_protection" = "비밀번호 보호";
+"bill_import" = "거래 가져오기";
+"bill_export" = "거래 내보내기";
+"smart_accounting" = "스마트 기록";
+"voice_input" = "음성 입력";
+"ocr_scan" = "영수증 스캔";
+"about" = "정보";
+"version" = "버전";
+"rate_app" = "앱 평가하기";
+"feedback" = "피드백";
+"privacy_policy" = "개인정보 처리방침";
+"terms_of_service" = "서비스 이용약관";
+
+// 환율
+"exchange_rate" = "환율";
+"live_rate" = "실시간 환율";
+"last_update" = "마지막 업데이트";
+"update_rate" = "환율 업데이트";
+"rate_updated" = "환율이 업데이트되었습니다";
+"rate_update_failed" = "업데이트 실패, 네트워크를 확인하세요";
+"never_updated" = "업데이트 안됨";
+"rate_source" = "환율 데이터는 ECB에서 제공, 매시간 자동 업데이트";
+
+// 언어
+"follow_system" = "시스템 설정 따르기";
+"simplified_chinese" = "简体中文";
+"traditional_chinese" = "繁體中文";
+"english" = "English";
+"japanese" = "日本語";
+"korean" = "한국어";
+"language_change_hint" = "언어 변경을 완전히 적용하려면 앱을 다시 시작하세요";
+
+// 설정 기능
+"screenshot_import" = "스크린샷 가져오기";
+"dynamic_island" = "다이나믹 아일랜드";
+"cycle_management" = "주기 관리";
+"installment_management" = "할부 관리";
+"category_management" = "카테고리 관리";
+"tag_management" = "태그 관리";
+"budget_feature" = "예산 기능";
+"reimbursement" = "경비 청구";
+"currency_exchange" = "통화 및 환율";
+"asset_settings" = "자산 설정";
+"statistics_settings" = "통계 설정";
+"template_settings" = "템플릿";
+"refund_settings" = "환불 설정";
+"multi_book" = "다중 장부";
+"saving_feature" = "저축 기능";
+"personalization" = "개인화";
+"share_app" = "앱 공유";
+
+// 홈
+"home" = "홈";
+"recent_transactions" = "최근 거래";
+"view_all" = "전체 보기";
+"no_transactions" = "거래 없음";
+"start_recording" = "기록 시작";
+"monthly_overview" = "이번 달 개요";
+
+// 더 많은 설정
+"location_settings" = "위치 설정";
+"bill_image" = "청구서 이미지";
+"time_settings" = "시간 설정";
+"bookkeeping_map" = "가계부 지도";
+"backup_restore" = "백업 및 복원";
+"efficiency" = "효율성";
+"faq" = "자주 묻는 질문";
+"user_guide" = "사용 가이드";
+"help_feedback" = "도움말 및 피드백";
+
+// 가계부 화면
+"default_ledger" = "기본 장부";
+"income_expense_calendar" = "수입지출 달력";
+"total_expense" = "총 지출";
+"total_income" = "총 수입";
+"month_balance" = "월 잔액";
+"no_transactions_this_month" = "이번 달 거래 없음";
+"tap_plus_to_start" = "+ 를 탭하여 기록 시작";
+"sort_by_time" = "시간순";
+"sort_by_amount" = "금액순";
+"sort_by_category" = "카테고리순";
+"search" = "검색";
+"show_expense_only" = "지출만 표시";
+"show_income_only" = "수입만 표시";
+"export_data" = "데이터 내보내기";
+
+// 자산 화면
+"net_worth" = "순자산";
+"total_assets" = "총 자산";
+"total_liabilities" = "총 부채";
+"add_account" = "계좌 추가";
+"no_accounts" = "계좌 없음";
+"tap_to_add_account" = "+ 를 탭하여 계좌 추가";
+
+// 저축 화면
+"savings" = "저축";
+"saving_stats" = "저축 통계";
+"saving_reminder" = "저축 알림";
+"sort_order" = "정렬 순서";
+"hide_completed" = "완료 숨기기";
+"show_completed" = "완료 표시";
+"no_data" = "데이터 없음";
+"sort_by_progress" = "진행률순";
+"total_budget" = "총 예산";
+
+// 통계 화면
+"stats_week" = "주";
+"stats_month" = "월";
+"stats_year" = "년";
+"stats_all" = "전체";
+"stats_range" = "범위";
+"filter" = "필터";
+"start" = "시작";
+"end" = "종료";
+"income_expense_stats" = "수입지출 통계";
+"balance" = "잔액";
+"yearly_avg_expense" = "연평균";
+"reimbursement_stats" = "경비 청구";
+"pending_reimbursement" = "대기 중";
+"reimbursed" = "청구 완료";
+"transfer_stats" = "이체 통계";
+"repayment" = "상환";
+"receipt" = "입금";
+"expense_category_detail" = "지출 카테고리 상세";
+"income_category_detail" = "수입 카테고리 상세";
+"all_categories" = "전체 카테고리";
+"no_expense_category_data" = "지출 데이터 없음";
+"no_income_category_data" = "수입 데이터 없음";
+"collapse" = "접기";
+"expand_all" = "모두 펼치기";
+"bill_summary" = "요약";
+"show_balance_color" = "색상 표시";
+"total" = "합계";
+"yearly_avg" = "연평균";
+"share_current_page" = "페이지 공유";
+
+// 저축 방법
+"saving_fixed" = "정액 저축";
+"saving_flexible" = "유연 저축";
+"saving_week52" = "52주 챌린지";
+"saving_day365" = "365일 챌린지";
+
+// 프로필
+"my_ledger" = "모든 거래 기록";
+
+// 사용 가이드
+"guide_description" = "Spendo 사용법은 온라인 문서를 참조하세요";
+"quick_start_guide" = "빠른 시작";
+"view_readme" = "README 보기";
+"detailed_guide" = "상세 가이드";
+"view_wiki" = "Wiki 보기";
+"source_code" = "소스 코드";
+"view_github" = "GitHub에서 보기";
+"open_source_note" = "Spendo는 오픈소스 프로젝트입니다";
+
+"view_guide" = "온라인 가이드 보기";
+"view_website" = "웹사이트 방문";
+"ledger_title" = "내 가계부";
