@@ -329,7 +329,7 @@ struct SavingMethodDetailView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("取消") { dismiss() }
+                    Button("cancel".localized) { dismiss() }
                         .foregroundColor(SpendoTheme.textPrimary)
                 }
             }
