@@ -317,3 +317,11 @@
 // Import/Export
 "import_error" = "Import Error";
 "unknown_error" = "Unknown error";
+"export_format" = "Export Format";
+"date_range" = "Date Range";
+"export_preview" = "Export Preview";
+"transaction_count" = "Transactions";
+"processing" = "Processing...";
+"select_screenshot" = "Select screenshot to recognize";
+"select" = "Select";
+"change" = "Change";

@@ -189,7 +189,7 @@ struct ScreenshotImportView: View {
                         .cornerRadius(12)
                     
                     if isProcessing {
-                        ProgressView("识别中...")
+                        ProgressView("processing".localized)
                             .foregroundColor(SpendoTheme.textSecondary)
                     } else if !recognizedText.isEmpty {
                         Text(recognizedText)
@@ -205,7 +205,7 @@ struct ScreenshotImportView: View {
                             .font(.system(size: 60))
                             .foregroundColor(SpendoTheme.textTertiary)
                         
-                        Text("选择账单截图进行识别")
+                        Text("select_screenshot".localized)
                             .font(.system(size: 16))
                             .foregroundColor(SpendoTheme.textSecondary)
                     }
@@ -215,7 +215,7 @@ struct ScreenshotImportView: View {
                 Button(action: { showImagePicker = true }) {
                     HStack {
                         Image(systemName: "photo.badge.plus")
-                        Text(selectedImage == nil ? "选择截图" : "更换截图")
+                        Text(selectedImage == nil ? "select".localized : "change".localized)
                     }
                     .font(.system(size: 16, weight: .semibold))
                     .foregroundColor(.white)

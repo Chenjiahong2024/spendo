@@ -317,3 +317,11 @@
 // 导入导出
 "import_error" = "导入错误";
 "unknown_error" = "未知错误";
+"export_format" = "导出格式";
+"date_range" = "日期范围";
+"export_preview" = "导出预览";
+"transaction_count" = "交易笔数";
+"processing" = "处理中...";
+"select_screenshot" = "选择账单截图进行识别";
+"select" = "选择";
+"change" = "更换";
