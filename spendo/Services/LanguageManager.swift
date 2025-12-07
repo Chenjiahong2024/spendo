@@ -9,34 +9,91 @@ import Foundation
 import SwiftUI
 import Combine
 
-// MARK: - 支持的语言
+// MARK: - 支持的语言（全球语言支持）
 enum AppLanguage: String, CaseIterable {
     case system = "system"
+    // 东亚
     case zhHans = "zh-Hans"
     case zhHant = "zh-Hant"
     case english = "en"
     case japanese = "ja"
     case korean = "ko"
+    // 欧洲
+    case french = "fr"
+    case german = "de"
+    case spanish = "es"
+    case portuguese = "pt"
+    case italian = "it"
+    case dutch = "nl"
+    case polish = "pl"
+    case russian = "ru"
+    case turkish = "tr"
+    case ukrainian = "uk"
+    case greek = "el"
+    // 中东/南亚
+    case arabic = "ar"
+    case hindi = "hi"
+    case persian = "fa"
+    case hebrew = "he"
+    // 东南亚
+    case thai = "th"
+    case vietnamese = "vi"
+    case indonesian = "id"
+    case malay = "ms"
+    case filipino = "fil"
+    // 北欧
+    case swedish = "sv"
+    case norwegian = "nb"
+    case danish = "da"
+    case finnish = "fi"
     
     var displayName: String {
         switch self {
-        case .system: return "跟随系统"
+        case .system: return "跟随系统 / System"
         case .zhHans: return "简体中文"
         case .zhHant: return "繁體中文"
         case .english: return "English"
         case .japanese: return "日本語"
         case .korean: return "한국어"
+        case .french: return "Français"
+        case .german: return "Deutsch"
+        case .spanish: return "Español"
+        case .portuguese: return "Português"
+        case .italian: return "Italiano"
+        case .dutch: return "Nederlands"
+        case .polish: return "Polski"
+        case .russian: return "Русский"
+        case .turkish: return "Türkçe"
+        case .ukrainian: return "Українська"
+        case .greek: return "Ελληνικά"
+        case .arabic: return "العربية"
+        case .hindi: return "हिन्दी"
+        case .persian: return "فارسی"
+        case .hebrew: return "עברית"
+        case .thai: return "ไทย"
+        case .vietnamese: return "Tiếng Việt"
+        case .indonesian: return "Bahasa Indonesia"
+        case .malay: return "Bahasa Melayu"
+        case .filipino: return "Filipino"
+        case .swedish: return "Svenska"
+        case .norwegian: return "Norsk"
+        case .danish: return "Dansk"
+        case .finnish: return "Suomi"
         }
     }
     
     var localeIdentifier: String? {
         switch self {
         case .system: return nil
-        case .zhHans: return "zh-Hans"
-        case .zhHant: return "zh-Hant"
-        case .english: return "en"
-        case .japanese: return "ja"
-        case .korean: return "ko"
+        default: return self.rawValue
+        }
+    }
+    
+    // 是否是RTL语言（从右到左）
+    var isRTL: Bool {
+        switch self {
+        case .arabic, .persian, .hebrew: return true
+        default: return false
         }
     }
 }

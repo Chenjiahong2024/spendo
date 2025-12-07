@@ -1,0 +1,205 @@
+/* العربية (Arabic) */
+
+// عام
+"cancel" = "إلغاء";
+"confirm" = "تأكيد";
+"save" = "حفظ";
+"delete" = "حذف";
+"edit" = "تعديل";
+"done" = "تم";
+"back" = "رجوع";
+"settings" = "الإعدادات";
+"search" = "بحث";
+
+// TabBar
+"tab_ledger" = "الحسابات";
+"tab_assets" = "الأصول";
+"tab_savings" = "المدخرات";
+"tab_stats" = "الإحصائيات";
+"tab_settings" = "الإعدادات";
+
+// المعاملات
+"expense" = "مصروف";
+"income" = "دخل";
+"amount" = "المبلغ";
+"category" = "الفئة";
+"account" = "الحساب";
+"note" = "ملاحظة";
+"date" = "التاريخ";
+"date_time" = "التاريخ والوقت";
+"type" = "النوع";
+"add_transaction" = "إضافة";
+"add_note" = "إضافة ملاحظة";
+"select_category" = "اختر الفئة";
+"select_account" = "اختر الحساب";
+"not_selected" = "غير محدد";
+"save_transaction" = "حفظ المعاملة";
+"quick_input" = "إدخال سريع";
+
+// الإعدادات
+"language" = "اللغة";
+"language_settings" = "إعدادات اللغة";
+"currency" = "العملة";
+"primary_currency" = "العملة الرئيسية";
+"theme" = "المظهر";
+"personalization" = "التخصيص";
+"theme_color" = "لون المظهر";
+"tabbar_style" = "نمط الشريط";
+"system_style" = "نمط النظام";
+"custom_style" = "مخصص";
+"icon_style" = "نمط الأيقونات";
+"filled" = "مملوء";
+"outline" = "محيط";
+"animation" = "الرسوم المتحركة";
+"enable_animation" = "تفعيل الرسوم المتحركة";
+"restart_required" = "يتطلب إعادة التشغيل";
+"preview" = "معاينة";
+
+// الإحصائيات
+"total_expense" = "إجمالي المصروفات";
+"total_income" = "إجمالي الدخل";
+"balance" = "الرصيد";
+"this_month" = "هذا الشهر";
+"this_week" = "هذا الأسبوع";
+"today" = "اليوم";
+"this_year" = "هذه السنة";
+"expense_trend" = "اتجاه المصروفات";
+"category_stats" = "إحصائيات الفئات";
+"no_data" = "لا توجد بيانات";
+
+// الحسابات
+"cash" = "نقد";
+"bank_card" = "بطاقة بنكية";
+"credit_card" = "بطاقة ائتمان";
+"total_assets" = "إجمالي الأصول";
+"total_liabilities" = "إجمالي الالتزامات";
+"net_assets" = "صافي الأصول";
+"add_account" = "إضافة حساب";
+
+// الفئات - المصروفات
+"food" = "طعام";
+"transport" = "مواصلات";
+"shopping" = "تسوق";
+"entertainment" = "ترفيه";
+"housing" = "سكن";
+"medical" = "صحة";
+"education" = "تعليم";
+"travel" = "سفر";
+"other" = "أخرى";
+"daily" = "يومي";
+"communication" = "اتصالات";
+"fitness" = "لياقة";
+"beauty" = "جمال";
+"pet" = "حيوان أليف";
+
+// الفئات - الدخل
+"salary" = "راتب";
+"bonus" = "مكافأة";
+"investment" = "استثمار";
+"part_time" = "دوام جزئي";
+"gift" = "هدية";
+"refund" = "استرداد";
+"interest" = "فائدة";
+
+// الميزانية
+"budget" = "ميزانية";
+"monthly_budget" = "الميزانية الشهرية";
+"remaining_budget" = "الميزانية المتبقية";
+"over_budget" = "تجاوز الميزانية";
+"set_budget" = "تعيين الميزانية";
+"budget_progress" = "تقدم الميزانية";
+
+// الوقت
+"yesterday" = "أمس";
+"days_ago" = "منذ %d أيام";
+"just_now" = "الآن";
+"minutes_ago" = "منذ %d دقائق";
+"hours_ago" = "منذ %d ساعات";
+
+// وظائف أخرى
+"icloud_sync" = "مزامنة iCloud";
+"password_protection" = "حماية بكلمة مرور";
+"bill_import" = "استيراد الفواتير";
+"bill_export" = "تصدير الفواتير";
+"voice_input" = "إدخال صوتي";
+"ocr_scan" = "مسح الإيصال";
+"about" = "حول";
+"version" = "الإصدار";
+"rate_app" = "تقييم التطبيق";
+"feedback" = "ملاحظات";
+"privacy_policy" = "سياسة الخصوصية";
+"terms_of_service" = "شروط الخدمة";
+
+// سعر الصرف
+"exchange_rate" = "سعر الصرف";
+"live_rate" = "السعر الحالي";
+"last_update" = "آخر تحديث";
+"update_rate" = "تحديث";
+"rate_updated" = "تم التحديث";
+
+// اللغة
+"follow_system" = "اتباع النظام";
+"language_change_hint" = "أعد تشغيل التطبيق للتطبيق";
+
+// الوظائف
+"category_management" = "إدارة الفئات";
+"budget_feature" = "ميزة الميزانية";
+"multi_book" = "حسابات متعددة";
+"saving_feature" = "ميزة الادخار";
+"share_app" = "مشاركة مع الأصدقاء";
+
+// الرئيسية
+"home" = "الرئيسية";
+"recent_transactions" = "المعاملات الأخيرة";
+"view_all" = "عرض الكل";
+"no_transactions" = "لا توجد معاملات";
+"start_recording" = "ابدأ التسجيل";
+"monthly_overview" = "نظرة عامة شهرية";
+
+// الواجهة
+"default_ledger" = "الدفتر الافتراضي";
+"month_balance" = "رصيد الشهر";
+"no_transactions_this_month" = "لا توجد معاملات هذا الشهر";
+"tap_plus_to_start" = "اضغط + للبدء";
+"sort_by_time" = "ترتيب حسب التاريخ";
+"sort_by_amount" = "ترتيب حسب المبلغ";
+"export_data" = "تصدير البيانات";
+"net_worth" = "صافي الثروة";
+"no_accounts" = "لا توجد حسابات";
+
+// المدخرات
+"savings" = "المدخرات";
+"saving_stats" = "إحصائيات الادخار";
+"total_budget" = "إجمالي الميزانية";
+
+// الإحصائيات
+"stats_week" = "أسبوع";
+"stats_month" = "شهر";
+"stats_year" = "سنة";
+"stats_all" = "الكل";
+"filter" = "تصفية";
+"start" = "بداية";
+"end" = "نهاية";
+"all_categories" = "جميع الفئات";
+"collapse" = "طي";
+"expand_all" = "توسيع الكل";
+"total" = "الإجمالي";
+"share_current_page" = "مشاركة الصفحة";
+
+// طرق الادخار
+"saving_fixed" = "ادخار ثابت";
+"saving_flexible" = "ادخار مرن";
+"saving_week52" = "تحدي 52 أسبوع";
+"saving_day365" = "تحدي 365 يوم";
+
+// الدليل
+"guide_description" = "عرض الوثائق عبر الإنترنت";
+"quick_start_guide" = "البدء السريع";
+"view_guide" = "عرض الدليل";
+"view_website" = "زيارة الموقع";
+"ledger_title" = "دفتر حساباتي";
+"my_ledger" = "سجل كل معاملة";
+"user_guide" = "دليل المستخدم";
+"help_feedback" = "المساعدة والملاحظات";
+"faq" = "الأسئلة الشائعة";
+"backup_restore" = "النسخ الاحتياطي";

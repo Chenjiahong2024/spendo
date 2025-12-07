@@ -1,0 +1,163 @@
+/* Italiano (Italian) */
+
+// Generale
+"cancel" = "Annulla";
+"confirm" = "Conferma";
+"save" = "Salva";
+"delete" = "Elimina";
+"edit" = "Modifica";
+"done" = "Fatto";
+"back" = "Indietro";
+"settings" = "Impostazioni";
+"search" = "Cerca";
+
+// TabBar
+"tab_ledger" = "Conti";
+"tab_assets" = "Patrimonio";
+"tab_savings" = "Risparmio";
+"tab_stats" = "Statistiche";
+"tab_settings" = "Impostazioni";
+
+// Transazioni
+"expense" = "Spesa";
+"income" = "Entrata";
+"amount" = "Importo";
+"category" = "Categoria";
+"account" = "Conto";
+"note" = "Nota";
+"date" = "Data";
+"date_time" = "Data e ora";
+"type" = "Tipo";
+"add_transaction" = "Aggiungi";
+"save_transaction" = "Salva transazione";
+"quick_input" = "Inserimento rapido";
+
+// Impostazioni
+"language" = "Lingua";
+"currency" = "Valuta";
+"theme" = "Tema";
+"personalization" = "Personalizzazione";
+"theme_color" = "Colore tema";
+"animation" = "Animazione";
+"preview" = "Anteprima";
+
+// Statistiche
+"total_expense" = "Spese totali";
+"total_income" = "Entrate totali";
+"balance" = "Saldo";
+"this_month" = "Questo mese";
+"this_week" = "Questa settimana";
+"today" = "Oggi";
+"this_year" = "Quest'anno";
+"no_data" = "Nessun dato";
+
+// Conti
+"cash" = "Contanti";
+"bank_card" = "Carta bancaria";
+"credit_card" = "Carta di credito";
+"total_assets" = "Patrimonio totale";
+"net_assets" = "Patrimonio netto";
+"add_account" = "Aggiungi conto";
+
+// Categorie
+"food" = "Cibo";
+"transport" = "Trasporto";
+"shopping" = "Shopping";
+"entertainment" = "Intrattenimento";
+"housing" = "Casa";
+"medical" = "Salute";
+"education" = "Istruzione";
+"travel" = "Viaggio";
+"other" = "Altro";
+"salary" = "Stipendio";
+"bonus" = "Bonus";
+"investment" = "Investimento";
+"gift" = "Regalo";
+
+// Budget
+"budget" = "Budget";
+"monthly_budget" = "Budget mensile";
+"remaining_budget" = "Budget rimanente";
+
+// Tempo
+"yesterday" = "Ieri";
+"just_now" = "Ora";
+
+// Altre funzioni
+"icloud_sync" = "Sincronizzazione iCloud";
+"password_protection" = "Protezione password";
+"voice_input" = "Input vocale";
+"about" = "Info";
+"version" = "Versione";
+"rate_app" = "Valuta app";
+"feedback" = "Feedback";
+"privacy_policy" = "Privacy";
+"terms_of_service" = "Termini di servizio";
+
+// Tasso di cambio
+"exchange_rate" = "Tasso di cambio";
+"last_update" = "Ultimo aggiornamento";
+"update_rate" = "Aggiorna";
+
+// Lingua
+"follow_system" = "Segui sistema";
+"language_change_hint" = "Riavvia l'app per applicare";
+
+// Funzioni
+"category_management" = "Gestione categorie";
+"budget_feature" = "Funzione budget";
+"saving_feature" = "Funzione risparmio";
+"share_app" = "Condividi con amici";
+
+// Home
+"home" = "Home";
+"recent_transactions" = "Transazioni recenti";
+"view_all" = "Vedi tutto";
+"no_transactions" = "Nessuna transazione";
+"monthly_overview" = "Panoramica mensile";
+
+// Interfaccia
+"default_ledger" = "Libro mastro predefinito";
+"month_balance" = "Saldo mensile";
+"no_transactions_this_month" = "Nessuna transazione questo mese";
+"tap_plus_to_start" = "Tocca + per iniziare";
+"sort_by_time" = "Ordina per data";
+"sort_by_amount" = "Ordina per importo";
+"export_data" = "Esporta dati";
+"net_worth" = "Patrimonio netto";
+"no_accounts" = "Nessun conto";
+
+// Risparmio
+"savings" = "Risparmio";
+"saving_stats" = "Statistiche risparmio";
+"total_budget" = "Budget totale";
+
+// Statistiche
+"stats_week" = "Settimana";
+"stats_month" = "Mese";
+"stats_year" = "Anno";
+"stats_all" = "Tutto";
+"filter" = "Filtra";
+"start" = "Inizio";
+"end" = "Fine";
+"all_categories" = "Tutte le categorie";
+"total" = "Totale";
+"share_current_page" = "Condividi pagina";
+
+// Metodi di risparmio
+"saving_fixed" = "Risparmio fisso";
+"saving_flexible" = "Risparmio flessibile";
+"saving_week52" = "Sfida 52 settimane";
+"saving_day365" = "Sfida 365 giorni";
+
+// Guida
+"guide_description" = "Vedi documentazione online";
+"quick_start_guide" = "Avvio rapido";
+"view_guide" = "Vedi guida";
+"view_website" = "Visita sito web";
+"ledger_title" = "Il Mio Libro";
+"my_ledger" = "Registra ogni transazione";
+"user_guide" = "Guida utente";
+"help_feedback" = "Aiuto e feedback";
+"faq" = "FAQ";
+"backup_restore" = "Backup e ripristino";

@@ -1,0 +1,215 @@
+/* Português (Portuguese) */
+
+// Geral
+"cancel" = "Cancelar";
+"confirm" = "Confirmar";
+"save" = "Salvar";
+"delete" = "Excluir";
+"edit" = "Editar";
+"done" = "Concluído";
+"back" = "Voltar";
+"settings" = "Configurações";
+"search" = "Buscar";
+
+// TabBar
+"tab_ledger" = "Contas";
+"tab_assets" = "Ativos";
+"tab_savings" = "Poupança";
+"tab_stats" = "Estatísticas";
+"tab_settings" = "Configurações";
+
+// Transações
+"expense" = "Despesa";
+"income" = "Receita";
+"amount" = "Valor";
+"category" = "Categoria";
+"account" = "Conta";
+"note" = "Nota";
+"date" = "Data";
+"date_time" = "Data e hora";
+"type" = "Tipo";
+"add_transaction" = "Adicionar";
+"add_note" = "Adicionar nota";
+"select_category" = "Selecionar categoria";
+"select_account" = "Selecionar conta";
+"not_selected" = "Não selecionado";
+"save_transaction" = "Salvar transação";
+"quick_input" = "Entrada rápida";
+
+// Configurações
+"language" = "Idioma";
+"language_settings" = "Configurações de idioma";
+"currency" = "Moeda";
+"primary_currency" = "Moeda principal";
+"theme" = "Tema";
+"personalization" = "Personalização";
+"theme_color" = "Cor do tema";
+"tabbar_style" = "Estilo da barra";
+"system_style" = "Estilo do sistema";
+"custom_style" = "Personalizado";
+"icon_style" = "Estilo de ícones";
+"filled" = "Preenchido";
+"outline" = "Contorno";
+"animation" = "Animação";
+"enable_animation" = "Ativar animações";
+"animation_hint" = "Desativa animações de transição";
+"restart_required" = "Reinicialização necessária";
+"preview" = "Prévia";
+"theme_button_preview" = "Prévia do botão";
+
+// Estatísticas
+"total_expense" = "Despesas totais";
+"total_income" = "Receitas totais";
+"balance" = "Saldo";
+"this_month" = "Este mês";
+"this_week" = "Esta semana";
+"today" = "Hoje";
+"this_year" = "Este ano";
+"expense_trend" = "Tendência de despesas";
+"category_stats" = "Estatísticas por categoria";
+"no_data" = "Sem dados";
+
+// Contas
+"cash" = "Dinheiro";
+"bank_card" = "Cartão bancário";
+"credit_card" = "Cartão de crédito";
+"alipay" = "Alipay";
+"wechat_pay" = "WeChat Pay";
+"total_assets" = "Ativos totais";
+"total_liabilities" = "Passivos totais";
+"net_assets" = "Ativos líquidos";
+"add_account" = "Adicionar conta";
+
+// Categorias - Despesas
+"food" = "Alimentação";
+"transport" = "Transporte";
+"shopping" = "Compras";
+"entertainment" = "Entretenimento";
+"housing" = "Moradia";
+"medical" = "Saúde";
+"education" = "Educação";
+"travel" = "Viagem";
+"other" = "Outros";
+"daily" = "Diário";
+"communication" = "Comunicação";
+"fitness" = "Fitness";
+"beauty" = "Beleza";
+"pet" = "Pet";
+
+// Categorias - Receitas
+"salary" = "Salário";
+"bonus" = "Bônus";
+"investment" = "Investimento";
+"part_time" = "Meio período";
+"gift" = "Presente";
+"refund" = "Reembolso";
+"interest" = "Juros";
+
+// Orçamento
+"budget" = "Orçamento";
+"monthly_budget" = "Orçamento mensal";
+"remaining_budget" = "Orçamento restante";
+"over_budget" = "Acima do orçamento";
+"set_budget" = "Definir orçamento";
+"budget_progress" = "Progresso do orçamento";
+
+// Tempo
+"yesterday" = "Ontem";
+"days_ago" = "Há %d dias";
+"just_now" = "Agora mesmo";
+"minutes_ago" = "Há %d minutos";
+"hours_ago" = "Há %d horas";
+
+// Outras funções
+"icloud_sync" = "Sincronização iCloud";
+"password_protection" = "Proteção por senha";
+"bill_import" = "Importar faturas";
+"bill_export" = "Exportar faturas";
+"smart_accounting" = "Contabilidade inteligente";
+"voice_input" = "Entrada por voz";
+"ocr_scan" = "Escanear recibo";
+"about" = "Sobre";
+"version" = "Versão";
+"rate_app" = "Avaliar app";
+"feedback" = "Feedback";
+"privacy_policy" = "Política de privacidade";
+"terms_of_service" = "Termos de serviço";
+
+// Taxa de câmbio
+"exchange_rate" = "Taxa de câmbio";
+"live_rate" = "Taxa ao vivo";
+"last_update" = "Última atualização";
+"update_rate" = "Atualizar";
+"rate_updated" = "Taxa atualizada";
+"rate_update_failed" = "Falha na atualização";
+"never_updated" = "Nunca atualizado";
+"rate_source" = "Dados do BCE, atualizado a cada hora";
+
+// Idioma
+"follow_system" = "Seguir sistema";
+"language_change_hint" = "Reinicie o app para aplicar";
+
+// Funções
+"screenshot_import" = "Importar captura";
+"dynamic_island" = "Dynamic Island";
+"category_management" = "Gerenciar categorias";
+"budget_feature" = "Função de orçamento";
+"multi_book" = "Múltiplas contas";
+"saving_feature" = "Função de poupança";
+"share_app" = "Compartilhar com amigos";
+
+// Início
+"home" = "Início";
+"recent_transactions" = "Transações recentes";
+"view_all" = "Ver tudo";
+"no_transactions" = "Sem transações";
+"start_recording" = "Comece a registrar";
+"monthly_overview" = "Resumo mensal";
+
+// Interface
+"default_ledger" = "Livro padrão";
+"month_balance" = "Saldo mensal";
+"no_transactions_this_month" = "Sem transações este mês";
+"tap_plus_to_start" = "Toque em + para começar";
+"sort_by_time" = "Ordenar por data";
+"sort_by_amount" = "Ordenar por valor";
+"export_data" = "Exportar dados";
+"net_worth" = "Patrimônio líquido";
+"no_accounts" = "Sem contas";
+
+// Poupança
+"savings" = "Poupança";
+"saving_stats" = "Estatísticas de poupança";
+"total_budget" = "Orçamento total";
+
+// Estatísticas
+"stats_week" = "Semana";
+"stats_month" = "Mês";
+"stats_year" = "Ano";
+"stats_all" = "Tudo";
+"filter" = "Filtrar";
+"start" = "Início";
+"end" = "Fim";
+"all_categories" = "Todas as categorias";
+"collapse" = "Recolher";
+"expand_all" = "Expandir tudo";
+"total" = "Total";
+"share_current_page" = "Compartilhar esta página";
+
+// Métodos de poupança
+"saving_fixed" = "Poupança fixa";
+"saving_flexible" = "Poupança flexível";
+"saving_week52" = "Desafio 52 semanas";
+"saving_day365" = "Desafio 365 dias";
+
+// Guia
+"guide_description" = "Ver documentação online";
+"quick_start_guide" = "Início rápido";
+"view_guide" = "Ver guia online";
+"view_website" = "Visitar site";
+"ledger_title" = "Meu Livro";
+"my_ledger" = "Registre cada transação";
+"user_guide" = "Guia do usuário";
+"help_feedback" = "Ajuda e feedback";
+"faq" = "FAQ";
+"backup_restore" = "Backup e restauração";

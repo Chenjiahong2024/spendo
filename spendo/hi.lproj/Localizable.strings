@@ -1,0 +1,205 @@
+/* हिन्दी (Hindi) */
+
+// सामान्य
+"cancel" = "रद्द करें";
+"confirm" = "पुष्टि करें";
+"save" = "सहेजें";
+"delete" = "हटाएं";
+"edit" = "संपादित करें";
+"done" = "पूर्ण";
+"back" = "वापस";
+"settings" = "सेटिंग्स";
+"search" = "खोजें";
+
+// TabBar
+"tab_ledger" = "खाता";
+"tab_assets" = "संपत्ति";
+"tab_savings" = "बचत";
+"tab_stats" = "आंकड़े";
+"tab_settings" = "सेटिंग्स";
+
+// लेनदेन
+"expense" = "खर्च";
+"income" = "आय";
+"amount" = "राशि";
+"category" = "श्रेणी";
+"account" = "खाता";
+"note" = "नोट";
+"date" = "तारीख";
+"date_time" = "तारीख और समय";
+"type" = "प्रकार";
+"add_transaction" = "जोड़ें";
+"add_note" = "नोट जोड़ें";
+"select_category" = "श्रेणी चुनें";
+"select_account" = "खाता चुनें";
+"not_selected" = "चयनित नहीं";
+"save_transaction" = "लेनदेन सहेजें";
+"quick_input" = "त्वरित इनपुट";
+
+// सेटिंग्स
+"language" = "भाषा";
+"language_settings" = "भाषा सेटिंग्स";
+"currency" = "मुद्रा";
+"primary_currency" = "मुख्य मुद्रा";
+"theme" = "थीम";
+"personalization" = "वैयक्तिकरण";
+"theme_color" = "थीम रंग";
+"tabbar_style" = "टैब बार शैली";
+"system_style" = "सिस्टम शैली";
+"custom_style" = "कस्टम";
+"icon_style" = "आइकन शैली";
+"filled" = "भरा हुआ";
+"outline" = "आउटलाइन";
+"animation" = "एनिमेशन";
+"enable_animation" = "एनिमेशन सक्षम करें";
+"restart_required" = "पुनरारंभ आवश्यक";
+"preview" = "पूर्वावलोकन";
+
+// आंकड़े
+"total_expense" = "कुल खर्च";
+"total_income" = "कुल आय";
+"balance" = "शेष";
+"this_month" = "इस महीने";
+"this_week" = "इस सप्ताह";
+"today" = "आज";
+"this_year" = "इस वर्ष";
+"expense_trend" = "खर्च प्रवृत्ति";
+"category_stats" = "श्रेणी आंकड़े";
+"no_data" = "कोई डेटा नहीं";
+
+// खाते
+"cash" = "नकद";
+"bank_card" = "बैंक कार्ड";
+"credit_card" = "क्रेडिट कार्ड";
+"total_assets" = "कुल संपत्ति";
+"total_liabilities" = "कुल देनदारियां";
+"net_assets" = "शुद्ध संपत्ति";
+"add_account" = "खाता जोड़ें";
+
+// श्रेणियां - खर्च
+"food" = "भोजन";
+"transport" = "परिवहन";
+"shopping" = "खरीदारी";
+"entertainment" = "मनोरंजन";
+"housing" = "आवास";
+"medical" = "चिकित्सा";
+"education" = "शिक्षा";
+"travel" = "यात्रा";
+"other" = "अन्य";
+"daily" = "दैनिक";
+"communication" = "संचार";
+"fitness" = "फिटनेस";
+"beauty" = "सौंदर्य";
+"pet" = "पालतू";
+
+// श्रेणियां - आय
+"salary" = "वेतन";
+"bonus" = "बोनस";
+"investment" = "निवेश";
+"part_time" = "अंशकालिक";
+"gift" = "उपहार";
+"refund" = "वापसी";
+"interest" = "ब्याज";
+
+// बजट
+"budget" = "बजट";
+"monthly_budget" = "मासिक बजट";
+"remaining_budget" = "शेष बजट";
+"over_budget" = "बजट से अधिक";
+"set_budget" = "बजट सेट करें";
+"budget_progress" = "बजट प्रगति";
+
+// समय
+"yesterday" = "कल";
+"days_ago" = "%d दिन पहले";
+"just_now" = "अभी";
+"minutes_ago" = "%d मिनट पहले";
+"hours_ago" = "%d घंटे पहले";
+
+// अन्य सुविधाएं
+"icloud_sync" = "iCloud सिंक";
+"password_protection" = "पासवर्ड सुरक्षा";
+"bill_import" = "बिल आयात";
+"bill_export" = "बिल निर्यात";
+"voice_input" = "वॉइस इनपुट";
+"ocr_scan" = "रसीद स्कैन करें";
+"about" = "के बारे में";
+"version" = "संस्करण";
+"rate_app" = "ऐप रेट करें";
+"feedback" = "प्रतिक्रिया";
+"privacy_policy" = "गोपनीयता नीति";
+"terms_of_service" = "सेवा की शर्तें";
+
+// विनिमय दर
+"exchange_rate" = "विनिमय दर";
+"live_rate" = "लाइव दर";
+"last_update" = "अंतिम अपडेट";
+"update_rate" = "अपडेट करें";
+"rate_updated" = "दर अपडेट हुई";
+
+// भाषा
+"follow_system" = "सिस्टम का पालन करें";
+"language_change_hint" = "लागू करने के लिए ऐप पुनरारंभ करें";
+
+// सुविधाएं
+"category_management" = "श्रेणी प्रबंधन";
+"budget_feature" = "बजट सुविधा";
+"multi_book" = "कई खाते";
+"saving_feature" = "बचत सुविधा";
+"share_app" = "दोस्तों के साथ साझा करें";
+
+// होम
+"home" = "होम";
+"recent_transactions" = "हालिया लेनदेन";
+"view_all" = "सभी देखें";
+"no_transactions" = "कोई लेनदेन नहीं";
+"start_recording" = "रिकॉर्डिंग शुरू करें";
+"monthly_overview" = "मासिक सारांश";
+
+// इंटरफ़ेस
+"default_ledger" = "डिफ़ॉल्ट खाता";
+"month_balance" = "मासिक शेष";
+"no_transactions_this_month" = "इस महीने कोई लेनदेन नहीं";
+"tap_plus_to_start" = "शुरू करने के लिए + टैप करें";
+"sort_by_time" = "समय के अनुसार";
+"sort_by_amount" = "राशि के अनुसार";
+"export_data" = "डेटा निर्यात करें";
+"net_worth" = "कुल संपत्ति";
+"no_accounts" = "कोई खाता नहीं";
+
+// बचत
+"savings" = "बचत";
+"saving_stats" = "बचत आंकड़े";
+"total_budget" = "कुल बजट";
+
+// आंकड़े
+"stats_week" = "सप्ताह";
+"stats_month" = "महीना";
+"stats_year" = "वर्ष";
+"stats_all" = "सभी";
+"filter" = "फ़िल्टर";
+"start" = "शुरू";
+"end" = "समाप्त";
+"all_categories" = "सभी श्रेणियां";
+"collapse" = "संकुचित करें";
+"expand_all" = "सभी विस्तृत करें";
+"total" = "कुल";
+"share_current_page" = "पेज साझा करें";
+
+// बचत विधियां
+"saving_fixed" = "निश्चित बचत";
+"saving_flexible" = "लचीली बचत";
+"saving_week52" = "52 सप्ताह चैलेंज";
+"saving_day365" = "365 दिन चैलेंज";
+
+// गाइड
+"guide_description" = "ऑनलाइन डॉक्यूमेंटेशन देखें";
+"quick_start_guide" = "त्वरित शुरुआत";
+"view_guide" = "गाइड देखें";
+"view_website" = "वेबसाइट देखें";
+"ledger_title" = "मेरा खाता";
+"my_ledger" = "हर लेनदेन रिकॉर्ड करें";
+"user_guide" = "उपयोगकर्ता गाइड";
+"help_feedback" = "सहायता और प्रतिक्रिया";
+"faq" = "सामान्य प्रश्न";
+"backup_restore" = "बैकअप और पुनर्स्थापना";

@@ -1,0 +1,203 @@
+/* ไทย (Thai) */
+
+// ทั่วไป
+"cancel" = "ยกเลิก";
+"confirm" = "ยืนยัน";
+"save" = "บันทึก";
+"delete" = "ลบ";
+"edit" = "แก้ไข";
+"done" = "เสร็จสิ้น";
+"back" = "กลับ";
+"settings" = "การตั้งค่า";
+"search" = "ค้นหา";
+
+// TabBar
+"tab_ledger" = "บัญชี";
+"tab_assets" = "ทรัพย์สิน";
+"tab_savings" = "เงินออม";
+"tab_stats" = "สถิติ";
+"tab_settings" = "ตั้งค่า";
+
+// ธุรกรรม
+"expense" = "รายจ่าย";
+"income" = "รายได้";
+"amount" = "จำนวนเงิน";
+"category" = "หมวดหมู่";
+"account" = "บัญชี";
+"note" = "หมายเหตุ";
+"date" = "วันที่";
+"date_time" = "วันที่และเวลา";
+"type" = "ประเภท";
+"add_transaction" = "เพิ่ม";
+"add_note" = "เพิ่มหมายเหตุ";
+"select_category" = "เลือกหมวดหมู่";
+"select_account" = "เลือกบัญชี";
+"not_selected" = "ไม่ได้เลือก";
+"save_transaction" = "บันทึกธุรกรรม";
+"quick_input" = "กรอกเร็ว";
+
+// การตั้งค่า
+"language" = "ภาษา";
+"language_settings" = "ตั้งค่าภาษา";
+"currency" = "สกุลเงิน";
+"primary_currency" = "สกุลเงินหลัก";
+"theme" = "ธีม";
+"personalization" = "ปรับแต่ง";
+"theme_color" = "สีธีม";
+"tabbar_style" = "รูปแบบแถบ";
+"system_style" = "รูปแบบระบบ";
+"custom_style" = "กำหนดเอง";
+"icon_style" = "รูปแบบไอคอน";
+"filled" = "เติมสี";
+"outline" = "เส้นขอบ";
+"animation" = "แอนิเมชัน";
+"enable_animation" = "เปิดแอนิเมชัน";
+"restart_required" = "ต้องรีสตาร์ท";
+"preview" = "ตัวอย่าง";
+
+// สถิติ
+"total_expense" = "รายจ่ายทั้งหมด";
+"total_income" = "รายได้ทั้งหมด";
+"balance" = "ยอดคงเหลือ";
+"this_month" = "เดือนนี้";
+"this_week" = "สัปดาห์นี้";
+"today" = "วันนี้";
+"this_year" = "ปีนี้";
+"expense_trend" = "แนวโน้มรายจ่าย";
+"category_stats" = "สถิติหมวดหมู่";
+"no_data" = "ไม่มีข้อมูล";
+
+// บัญชี
+"cash" = "เงินสด";
+"bank_card" = "บัตรธนาคาร";
+"credit_card" = "บัตรเครดิต";
+"total_assets" = "ทรัพย์สินรวม";
+"total_liabilities" = "หนี้สินรวม";
+"net_assets" = "ทรัพย์สินสุทธิ";
+"add_account" = "เพิ่มบัญชี";
+
+// หมวดหมู่ - รายจ่าย
+"food" = "อาหาร";
+"transport" = "เดินทาง";
+"shopping" = "ช้อปปิ้ง";
+"entertainment" = "บันเทิง";
+"housing" = "ที่พัก";
+"medical" = "สุขภาพ";
+"education" = "การศึกษา";
+"travel" = "ท่องเที่ยว";
+"other" = "อื่นๆ";
+"daily" = "รายวัน";
+"communication" = "สื่อสาร";
+"fitness" = "ฟิตเนส";
+"beauty" = "ความงาม";
+"pet" = "สัตว์เลี้ยง";
+
+// หมวดหมู่ - รายได้
+"salary" = "เงินเดือน";
+"bonus" = "โบนัส";
+"investment" = "การลงทุน";
+"part_time" = "งานเสริม";
+"gift" = "ของขวัญ";
+"refund" = "คืนเงิน";
+"interest" = "ดอกเบี้ย";
+
+// งบประมาณ
+"budget" = "งบประมาณ";
+"monthly_budget" = "งบประมาณรายเดือน";
+"remaining_budget" = "งบประมาณคงเหลือ";
+"over_budget" = "เกินงบประมาณ";
+"set_budget" = "ตั้งงบประมาณ";
+"budget_progress" = "ความคืบหน้างบประมาณ";
+
+// เวลา
+"yesterday" = "เมื่อวาน";
+"days_ago" = "%d วันที่แล้ว";
+"just_now" = "เมื่อกี้";
+"minutes_ago" = "%d นาทีที่แล้ว";
+"hours_ago" = "%d ชั่วโมงที่แล้ว";
+
+// ฟีเจอร์อื่นๆ
+"icloud_sync" = "ซิงค์ iCloud";
+"password_protection" = "ป้องกันด้วยรหัสผ่าน";
+"voice_input" = "พูดเสียง";
+"ocr_scan" = "สแกนใบเสร็จ";
+"about" = "เกี่ยวกับ";
+"version" = "เวอร์ชัน";
+"rate_app" = "ให้คะแนนแอป";
+"feedback" = "ข้อเสนอแนะ";
+"privacy_policy" = "นโยบายความเป็นส่วนตัว";
+"terms_of_service" = "เงื่อนไขการใช้งาน";
+
+// อัตราแลกเปลี่ยน
+"exchange_rate" = "อัตราแลกเปลี่ยน";
+"live_rate" = "อัตราปัจจุบัน";
+"last_update" = "อัปเดตล่าสุด";
+"update_rate" = "อัปเดต";
+"rate_updated" = "อัปเดตแล้ว";
+
+// ภาษา
+"follow_system" = "ตามระบบ";
+"language_change_hint" = "รีสตาร์ทแอปเพื่อใช้งาน";
+
+// ฟีเจอร์
+"category_management" = "จัดการหมวดหมู่";
+"budget_feature" = "ฟีเจอร์งบประมาณ";
+"multi_book" = "หลายบัญชี";
+"saving_feature" = "ฟีเจอร์ออมเงิน";
+"share_app" = "แชร์กับเพื่อน";
+
+// หน้าหลัก
+"home" = "หน้าหลัก";
+"recent_transactions" = "ธุรกรรมล่าสุด";
+"view_all" = "ดูทั้งหมด";
+"no_transactions" = "ไม่มีธุรกรรม";
+"start_recording" = "เริ่มบันทึก";
+"monthly_overview" = "ภาพรวมรายเดือน";
+
+// อินเทอร์เฟซ
+"default_ledger" = "บัญชีเริ่มต้น";
+"month_balance" = "ยอดคงเหลือรายเดือน";
+"no_transactions_this_month" = "ไม่มีธุรกรรมเดือนนี้";
+"tap_plus_to_start" = "แตะ + เพื่อเริ่ม";
+"sort_by_time" = "เรียงตามเวลา";
+"sort_by_amount" = "เรียงตามจำนวน";
+"export_data" = "ส่งออกข้อมูล";
+"net_worth" = "มูลค่าสุทธิ";
+"no_accounts" = "ไม่มีบัญชี";
+
+// เงินออม
+"savings" = "เงินออม";
+"saving_stats" = "สถิติการออม";
+"total_budget" = "งบประมาณรวม";
+
+// สถิติ
+"stats_week" = "สัปดาห์";
+"stats_month" = "เดือน";
+"stats_year" = "ปี";
+"stats_all" = "ทั้งหมด";
+"filter" = "กรอง";
+"start" = "เริ่ม";
+"end" = "สิ้นสุด";
+"all_categories" = "ทุกหมวดหมู่";
+"collapse" = "ย่อ";
+"expand_all" = "ขยายทั้งหมด";
+"total" = "รวม";
+"share_current_page" = "แชร์หน้านี้";
+
+// วิธีออมเงิน
+"saving_fixed" = "ออมเงินแบบคงที่";
+"saving_flexible" = "ออมเงินแบบยืดหยุ่น";
+"saving_week52" = "ชาเลนจ์ 52 สัปดาห์";
+"saving_day365" = "ชาเลนจ์ 365 วัน";
+
+// คู่มือ
+"guide_description" = "ดูเอกสารออนไลน์";
+"quick_start_guide" = "เริ่มต้นเร็ว";
+"view_guide" = "ดูคู่มือ";
+"view_website" = "เยี่ยมชมเว็บไซต์";
+"ledger_title" = "บัญชีของฉัน";
+"my_ledger" = "บันทึกทุกรายการ";
+"user_guide" = "คู่มือผู้ใช้";
+"help_feedback" = "ช่วยเหลือและข้อเสนอแนะ";
+"faq" = "คำถามที่พบบ่อย";
+"backup_restore" = "สำรองและกู้คืน";

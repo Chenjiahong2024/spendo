@@ -1,0 +1,203 @@
+/* Bahasa Indonesia (Indonesian) */
+
+// Umum
+"cancel" = "Batal";
+"confirm" = "Konfirmasi";
+"save" = "Simpan";
+"delete" = "Hapus";
+"edit" = "Edit";
+"done" = "Selesai";
+"back" = "Kembali";
+"settings" = "Pengaturan";
+"search" = "Cari";
+
+// TabBar
+"tab_ledger" = "Buku Besar";
+"tab_assets" = "Aset";
+"tab_savings" = "Tabungan";
+"tab_stats" = "Statistik";
+"tab_settings" = "Pengaturan";
+
+// Transaksi
+"expense" = "Pengeluaran";
+"income" = "Pemasukan";
+"amount" = "Jumlah";
+"category" = "Kategori";
+"account" = "Akun";
+"note" = "Catatan";
+"date" = "Tanggal";
+"date_time" = "Tanggal dan waktu";
+"type" = "Jenis";
+"add_transaction" = "Tambah";
+"add_note" = "Tambah catatan";
+"select_category" = "Pilih kategori";
+"select_account" = "Pilih akun";
+"not_selected" = "Belum dipilih";
+"save_transaction" = "Simpan transaksi";
+"quick_input" = "Input cepat";
+
+// Pengaturan
+"language" = "Bahasa";
+"language_settings" = "Pengaturan bahasa";
+"currency" = "Mata uang";
+"primary_currency" = "Mata uang utama";
+"theme" = "Tema";
+"personalization" = "Personalisasi";
+"theme_color" = "Warna tema";
+"tabbar_style" = "Gaya tab bar";
+"system_style" = "Gaya sistem";
+"custom_style" = "Kustom";
+"icon_style" = "Gaya ikon";
+"filled" = "Isi";
+"outline" = "Garis";
+"animation" = "Animasi";
+"enable_animation" = "Aktifkan animasi";
+"restart_required" = "Perlu restart";
+"preview" = "Pratinjau";
+
+// Statistik
+"total_expense" = "Total pengeluaran";
+"total_income" = "Total pemasukan";
+"balance" = "Saldo";
+"this_month" = "Bulan ini";
+"this_week" = "Minggu ini";
+"today" = "Hari ini";
+"this_year" = "Tahun ini";
+"expense_trend" = "Tren pengeluaran";
+"category_stats" = "Statistik kategori";
+"no_data" = "Tidak ada data";
+
+// Akun
+"cash" = "Tunai";
+"bank_card" = "Kartu bank";
+"credit_card" = "Kartu kredit";
+"total_assets" = "Total aset";
+"total_liabilities" = "Total kewajiban";
+"net_assets" = "Aset bersih";
+"add_account" = "Tambah akun";
+
+// Kategori - Pengeluaran
+"food" = "Makanan";
+"transport" = "Transportasi";
+"shopping" = "Belanja";
+"entertainment" = "Hiburan";
+"housing" = "Tempat tinggal";
+"medical" = "Kesehatan";
+"education" = "Pendidikan";
+"travel" = "Perjalanan";
+"other" = "Lainnya";
+"daily" = "Harian";
+"communication" = "Komunikasi";
+"fitness" = "Kebugaran";
+"beauty" = "Kecantikan";
+"pet" = "Hewan peliharaan";
+
+// Kategori - Pemasukan
+"salary" = "Gaji";
+"bonus" = "Bonus";
+"investment" = "Investasi";
+"part_time" = "Paruh waktu";
+"gift" = "Hadiah";
+"refund" = "Pengembalian";
+"interest" = "Bunga";
+
+// Anggaran
+"budget" = "Anggaran";
+"monthly_budget" = "Anggaran bulanan";
+"remaining_budget" = "Sisa anggaran";
+"over_budget" = "Melebihi anggaran";
+"set_budget" = "Atur anggaran";
+"budget_progress" = "Progres anggaran";
+
+// Waktu
+"yesterday" = "Kemarin";
+"days_ago" = "%d hari lalu";
+"just_now" = "Baru saja";
+"minutes_ago" = "%d menit lalu";
+"hours_ago" = "%d jam lalu";
+
+// Fitur lainnya
+"icloud_sync" = "Sinkronisasi iCloud";
+"password_protection" = "Perlindungan kata sandi";
+"voice_input" = "Input suara";
+"ocr_scan" = "Pindai struk";
+"about" = "Tentang";
+"version" = "Versi";
+"rate_app" = "Nilai aplikasi";
+"feedback" = "Masukan";
+"privacy_policy" = "Kebijakan privasi";
+"terms_of_service" = "Ketentuan layanan";
+
+// Kurs
+"exchange_rate" = "Kurs";
+"live_rate" = "Kurs langsung";
+"last_update" = "Pembaruan terakhir";
+"update_rate" = "Perbarui";
+"rate_updated" = "Kurs diperbarui";
+
+// Bahasa
+"follow_system" = "Ikuti sistem";
+"language_change_hint" = "Restart aplikasi untuk menerapkan";
+
+// Fitur
+"category_management" = "Kelola kategori";
+"budget_feature" = "Fitur anggaran";
+"multi_book" = "Multi buku";
+"saving_feature" = "Fitur tabungan";
+"share_app" = "Bagikan ke teman";
+
+// Beranda
+"home" = "Beranda";
+"recent_transactions" = "Transaksi terbaru";
+"view_all" = "Lihat semua";
+"no_transactions" = "Tidak ada transaksi";
+"start_recording" = "Mulai mencatat";
+"monthly_overview" = "Ringkasan bulanan";
+
+// Antarmuka
+"default_ledger" = "Buku besar default";
+"month_balance" = "Saldo bulanan";
+"no_transactions_this_month" = "Tidak ada transaksi bulan ini";
+"tap_plus_to_start" = "Ketuk + untuk mulai";
+"sort_by_time" = "Urutkan berdasarkan waktu";
+"sort_by_amount" = "Urutkan berdasarkan jumlah";
+"export_data" = "Ekspor data";
+"net_worth" = "Kekayaan bersih";
+"no_accounts" = "Tidak ada akun";
+
+// Tabungan
+"savings" = "Tabungan";
+"saving_stats" = "Statistik tabungan";
+"total_budget" = "Total anggaran";
+
+// Statistik
+"stats_week" = "Minggu";
+"stats_month" = "Bulan";
+"stats_year" = "Tahun";
+"stats_all" = "Semua";
+"filter" = "Filter";
+"start" = "Mulai";
+"end" = "Akhir";
+"all_categories" = "Semua kategori";
+"collapse" = "Ciutkan";
+"expand_all" = "Perluas semua";
+"total" = "Total";
+"share_current_page" = "Bagikan halaman ini";
+
+// Metode menabung
+"saving_fixed" = "Tabungan tetap";
+"saving_flexible" = "Tabungan fleksibel";
+"saving_week52" = "Tantangan 52 minggu";
+"saving_day365" = "Tantangan 365 hari";
+
+// Panduan
+"guide_description" = "Lihat dokumentasi online";
+"quick_start_guide" = "Mulai cepat";
+"view_guide" = "Lihat panduan";
+"view_website" = "Kunjungi website";
+"ledger_title" = "Buku Besar Saya";
+"my_ledger" = "Catat setiap transaksi";
+"user_guide" = "Panduan pengguna";
+"help_feedback" = "Bantuan dan masukan";
+"faq" = "FAQ";
+"backup_restore" = "Cadangan dan pemulihan";

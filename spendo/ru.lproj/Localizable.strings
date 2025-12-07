@@ -1,0 +1,207 @@
+/* Русский (Russian) */
+
+// Общие
+"cancel" = "Отмена";
+"confirm" = "Подтвердить";
+"save" = "Сохранить";
+"delete" = "Удалить";
+"edit" = "Редактировать";
+"done" = "Готово";
+"back" = "Назад";
+"settings" = "Настройки";
+"search" = "Поиск";
+
+// TabBar
+"tab_ledger" = "Счета";
+"tab_assets" = "Активы";
+"tab_savings" = "Сбережения";
+"tab_stats" = "Статистика";
+"tab_settings" = "Настройки";
+
+// Транзакции
+"expense" = "Расход";
+"income" = "Доход";
+"amount" = "Сумма";
+"category" = "Категория";
+"account" = "Счёт";
+"note" = "Заметка";
+"date" = "Дата";
+"date_time" = "Дата и время";
+"type" = "Тип";
+"add_transaction" = "Добавить";
+"add_note" = "Добавить заметку";
+"select_category" = "Выбрать категорию";
+"select_account" = "Выбрать счёт";
+"not_selected" = "Не выбрано";
+"save_transaction" = "Сохранить транзакцию";
+"quick_input" = "Быстрый ввод";
+
+// Настройки
+"language" = "Язык";
+"language_settings" = "Настройки языка";
+"currency" = "Валюта";
+"primary_currency" = "Основная валюта";
+"theme" = "Тема";
+"personalization" = "Персонализация";
+"theme_color" = "Цвет темы";
+"tabbar_style" = "Стиль панели";
+"system_style" = "Системный стиль";
+"custom_style" = "Пользовательский";
+"icon_style" = "Стиль иконок";
+"filled" = "Заполненные";
+"outline" = "Контурные";
+"animation" = "Анимация";
+"enable_animation" = "Включить анимацию";
+"animation_hint" = "Отключает переходные анимации";
+"restart_required" = "Требуется перезапуск";
+"preview" = "Предпросмотр";
+
+// Статистика
+"total_expense" = "Всего расходов";
+"total_income" = "Всего доходов";
+"balance" = "Баланс";
+"this_month" = "Этот месяц";
+"this_week" = "Эта неделя";
+"today" = "Сегодня";
+"this_year" = "Этот год";
+"expense_trend" = "Тренд расходов";
+"category_stats" = "Статистика по категориям";
+"no_data" = "Нет данных";
+
+// Счета
+"cash" = "Наличные";
+"bank_card" = "Банковская карта";
+"credit_card" = "Кредитная карта";
+"total_assets" = "Всего активов";
+"total_liabilities" = "Всего обязательств";
+"net_assets" = "Чистые активы";
+"add_account" = "Добавить счёт";
+
+// Категории - Расходы
+"food" = "Еда";
+"transport" = "Транспорт";
+"shopping" = "Покупки";
+"entertainment" = "Развлечения";
+"housing" = "Жильё";
+"medical" = "Здоровье";
+"education" = "Образование";
+"travel" = "Путешествия";
+"other" = "Другое";
+"daily" = "Ежедневное";
+"communication" = "Связь";
+"fitness" = "Фитнес";
+"beauty" = "Красота";
+"pet" = "Питомец";
+
+// Категории - Доходы
+"salary" = "Зарплата";
+"bonus" = "Бонус";
+"investment" = "Инвестиции";
+"part_time" = "Подработка";
+"gift" = "Подарок";
+"refund" = "Возврат";
+"interest" = "Проценты";
+
+// Бюджет
+"budget" = "Бюджет";
+"monthly_budget" = "Месячный бюджет";
+"remaining_budget" = "Остаток бюджета";
+"over_budget" = "Превышение бюджета";
+"set_budget" = "Установить бюджет";
+"budget_progress" = "Прогресс бюджета";
+
+// Время
+"yesterday" = "Вчера";
+"days_ago" = "%d дней назад";
+"just_now" = "Только что";
+"minutes_ago" = "%d минут назад";
+"hours_ago" = "%d часов назад";
+
+// Другие функции
+"icloud_sync" = "Синхронизация iCloud";
+"password_protection" = "Защита паролем";
+"bill_import" = "Импорт счетов";
+"bill_export" = "Экспорт счетов";
+"voice_input" = "Голосовой ввод";
+"ocr_scan" = "Сканировать чек";
+"about" = "О приложении";
+"version" = "Версия";
+"rate_app" = "Оценить";
+"feedback" = "Отзыв";
+"privacy_policy" = "Политика конфиденциальности";
+"terms_of_service" = "Условия использования";
+
+// Курс валют
+"exchange_rate" = "Курс валют";
+"live_rate" = "Текущий курс";
+"last_update" = "Последнее обновление";
+"update_rate" = "Обновить";
+"rate_updated" = "Курс обновлён";
+"rate_update_failed" = "Ошибка обновления";
+
+// Язык
+"follow_system" = "Как в системе";
+"language_change_hint" = "Перезапустите приложение";
+
+// Функции
+"category_management" = "Управление категориями";
+"budget_feature" = "Функция бюджета";
+"multi_book" = "Несколько счетов";
+"saving_feature" = "Функция сбережений";
+"share_app" = "Поделиться с друзьями";
+
+// Главная
+"home" = "Главная";
+"recent_transactions" = "Последние транзакции";
+"view_all" = "Показать все";
+"no_transactions" = "Нет транзакций";
+"start_recording" = "Начните записывать";
+"monthly_overview" = "Месячный обзор";
+
+// Интерфейс
+"default_ledger" = "Книга по умолчанию";
+"month_balance" = "Баланс за месяц";
+"no_transactions_this_month" = "Нет транзакций за этот месяц";
+"tap_plus_to_start" = "Нажмите + чтобы начать";
+"sort_by_time" = "По дате";
+"sort_by_amount" = "По сумме";
+"export_data" = "Экспорт данных";
+"net_worth" = "Чистая стоимость";
+"no_accounts" = "Нет счетов";
+
+// Сбережения
+"savings" = "Сбережения";
+"saving_stats" = "Статистика сбережений";
+"total_budget" = "Общий бюджет";
+
+// Статистика
+"stats_week" = "Неделя";
+"stats_month" = "Месяц";
+"stats_year" = "Год";
+"stats_all" = "Все";
+"filter" = "Фильтр";
+"start" = "Начало";
+"end" = "Конец";
+"all_categories" = "Все категории";
+"collapse" = "Свернуть";
+"expand_all" = "Развернуть все";
+"total" = "Итого";
+"share_current_page" = "Поделиться страницей";
+
+// Методы сбережений
+"saving_fixed" = "Фиксированные сбережения";
+"saving_flexible" = "Гибкие сбережения";
+"saving_week52" = "Челлендж 52 недели";
+"saving_day365" = "Челлендж 365 дней";
+
+// Руководство
+"guide_description" = "Смотреть онлайн документацию";
+"quick_start_guide" = "Быстрый старт";
+"view_guide" = "Смотреть руководство";
+"view_website" = "Посетить сайт";
+"ledger_title" = "Моя Книга";
+"my_ledger" = "Записывайте каждую транзакцию";
+"user_guide" = "Руководство пользователя";
+"help_feedback" = "Помощь и отзывы";
+"faq" = "FAQ";
+"backup_restore" = "Резервное копирование";

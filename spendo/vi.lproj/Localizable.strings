@@ -1,0 +1,203 @@
+/* Tiếng Việt (Vietnamese) */
+
+// Chung
+"cancel" = "Hủy";
+"confirm" = "Xác nhận";
+"save" = "Lưu";
+"delete" = "Xóa";
+"edit" = "Sửa";
+"done" = "Xong";
+"back" = "Quay lại";
+"settings" = "Cài đặt";
+"search" = "Tìm kiếm";
+
+// TabBar
+"tab_ledger" = "Sổ cái";
+"tab_assets" = "Tài sản";
+"tab_savings" = "Tiết kiệm";
+"tab_stats" = "Thống kê";
+"tab_settings" = "Cài đặt";
+
+// Giao dịch
+"expense" = "Chi tiêu";
+"income" = "Thu nhập";
+"amount" = "Số tiền";
+"category" = "Danh mục";
+"account" = "Tài khoản";
+"note" = "Ghi chú";
+"date" = "Ngày";
+"date_time" = "Ngày giờ";
+"type" = "Loại";
+"add_transaction" = "Thêm";
+"add_note" = "Thêm ghi chú";
+"select_category" = "Chọn danh mục";
+"select_account" = "Chọn tài khoản";
+"not_selected" = "Chưa chọn";
+"save_transaction" = "Lưu giao dịch";
+"quick_input" = "Nhập nhanh";
+
+// Cài đặt
+"language" = "Ngôn ngữ";
+"language_settings" = "Cài đặt ngôn ngữ";
+"currency" = "Tiền tệ";
+"primary_currency" = "Tiền tệ chính";
+"theme" = "Giao diện";
+"personalization" = "Cá nhân hóa";
+"theme_color" = "Màu giao diện";
+"tabbar_style" = "Kiểu thanh tab";
+"system_style" = "Kiểu hệ thống";
+"custom_style" = "Tùy chỉnh";
+"icon_style" = "Kiểu biểu tượng";
+"filled" = "Đặc";
+"outline" = "Viền";
+"animation" = "Hoạt ảnh";
+"enable_animation" = "Bật hoạt ảnh";
+"restart_required" = "Cần khởi động lại";
+"preview" = "Xem trước";
+
+// Thống kê
+"total_expense" = "Tổng chi tiêu";
+"total_income" = "Tổng thu nhập";
+"balance" = "Số dư";
+"this_month" = "Tháng này";
+"this_week" = "Tuần này";
+"today" = "Hôm nay";
+"this_year" = "Năm nay";
+"expense_trend" = "Xu hướng chi tiêu";
+"category_stats" = "Thống kê danh mục";
+"no_data" = "Không có dữ liệu";
+
+// Tài khoản
+"cash" = "Tiền mặt";
+"bank_card" = "Thẻ ngân hàng";
+"credit_card" = "Thẻ tín dụng";
+"total_assets" = "Tổng tài sản";
+"total_liabilities" = "Tổng nợ";
+"net_assets" = "Tài sản ròng";
+"add_account" = "Thêm tài khoản";
+
+// Danh mục - Chi tiêu
+"food" = "Ăn uống";
+"transport" = "Di chuyển";
+"shopping" = "Mua sắm";
+"entertainment" = "Giải trí";
+"housing" = "Nhà ở";
+"medical" = "Y tế";
+"education" = "Giáo dục";
+"travel" = "Du lịch";
+"other" = "Khác";
+"daily" = "Hàng ngày";
+"communication" = "Liên lạc";
+"fitness" = "Thể dục";
+"beauty" = "Làm đẹp";
+"pet" = "Thú cưng";
+
+// Danh mục - Thu nhập
+"salary" = "Lương";
+"bonus" = "Thưởng";
+"investment" = "Đầu tư";
+"part_time" = "Bán thời gian";
+"gift" = "Quà tặng";
+"refund" = "Hoàn tiền";
+"interest" = "Lãi suất";
+
+// Ngân sách
+"budget" = "Ngân sách";
+"monthly_budget" = "Ngân sách tháng";
+"remaining_budget" = "Ngân sách còn lại";
+"over_budget" = "Vượt ngân sách";
+"set_budget" = "Đặt ngân sách";
+"budget_progress" = "Tiến độ ngân sách";
+
+// Thời gian
+"yesterday" = "Hôm qua";
+"days_ago" = "%d ngày trước";
+"just_now" = "Vừa xong";
+"minutes_ago" = "%d phút trước";
+"hours_ago" = "%d giờ trước";
+
+// Tính năng khác
+"icloud_sync" = "Đồng bộ iCloud";
+"password_protection" = "Bảo vệ mật khẩu";
+"voice_input" = "Nhập giọng nói";
+"ocr_scan" = "Quét hóa đơn";
+"about" = "Giới thiệu";
+"version" = "Phiên bản";
+"rate_app" = "Đánh giá ứng dụng";
+"feedback" = "Phản hồi";
+"privacy_policy" = "Chính sách bảo mật";
+"terms_of_service" = "Điều khoản dịch vụ";
+
+// Tỷ giá
+"exchange_rate" = "Tỷ giá";
+"live_rate" = "Tỷ giá trực tiếp";
+"last_update" = "Cập nhật lần cuối";
+"update_rate" = "Cập nhật";
+"rate_updated" = "Đã cập nhật";
+
+// Ngôn ngữ
+"follow_system" = "Theo hệ thống";
+"language_change_hint" = "Khởi động lại ứng dụng để áp dụng";
+
+// Tính năng
+"category_management" = "Quản lý danh mục";
+"budget_feature" = "Tính năng ngân sách";
+"multi_book" = "Nhiều sổ cái";
+"saving_feature" = "Tính năng tiết kiệm";
+"share_app" = "Chia sẻ với bạn bè";
+
+// Trang chủ
+"home" = "Trang chủ";
+"recent_transactions" = "Giao dịch gần đây";
+"view_all" = "Xem tất cả";
+"no_transactions" = "Không có giao dịch";
+"start_recording" = "Bắt đầu ghi chép";
+"monthly_overview" = "Tổng quan tháng";
+
+// Giao diện
+"default_ledger" = "Sổ cái mặc định";
+"month_balance" = "Số dư tháng";
+"no_transactions_this_month" = "Không có giao dịch tháng này";
+"tap_plus_to_start" = "Nhấn + để bắt đầu";
+"sort_by_time" = "Sắp xếp theo thời gian";
+"sort_by_amount" = "Sắp xếp theo số tiền";
+"export_data" = "Xuất dữ liệu";
+"net_worth" = "Giá trị ròng";
+"no_accounts" = "Không có tài khoản";
+
+// Tiết kiệm
+"savings" = "Tiết kiệm";
+"saving_stats" = "Thống kê tiết kiệm";
+"total_budget" = "Tổng ngân sách";
+
+// Thống kê
+"stats_week" = "Tuần";
+"stats_month" = "Tháng";
+"stats_year" = "Năm";
+"stats_all" = "Tất cả";
+"filter" = "Lọc";
+"start" = "Bắt đầu";
+"end" = "Kết thúc";
+"all_categories" = "Tất cả danh mục";
+"collapse" = "Thu gọn";
+"expand_all" = "Mở rộng tất cả";
+"total" = "Tổng";
+"share_current_page" = "Chia sẻ trang này";
+
+// Phương pháp tiết kiệm
+"saving_fixed" = "Tiết kiệm cố định";
+"saving_flexible" = "Tiết kiệm linh hoạt";
+"saving_week52" = "Thử thách 52 tuần";
+"saving_day365" = "Thử thách 365 ngày";
+
+// Hướng dẫn
+"guide_description" = "Xem tài liệu trực tuyến";
+"quick_start_guide" = "Bắt đầu nhanh";
+"view_guide" = "Xem hướng dẫn";
+"view_website" = "Truy cập website";
+"ledger_title" = "Sổ cái của tôi";
+"my_ledger" = "Ghi chép mọi giao dịch";
+"user_guide" = "Hướng dẫn sử dụng";
+"help_feedback" = "Trợ giúp và phản hồi";
+"faq" = "Câu hỏi thường gặp";
+"backup_restore" = "Sao lưu và khôi phục";

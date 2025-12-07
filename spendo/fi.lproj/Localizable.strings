@@ -1,0 +1,282 @@
+/* English */
+
+// Common
+"cancel" = "Cancel";
+"confirm" = "Confirm";
+"save" = "Save";
+"delete" = "Delete";
+"edit" = "Edit";
+"done" = "Done";
+"back" = "Back";
+"settings" = "Settings";
+"search" = "Search";
+
+// TabBar
+"tab_ledger" = "Ledger";
+"tab_assets" = "Assets";
+"tab_savings" = "Savings";
+"tab_stats" = "Stats";
+"tab_settings" = "Settings";
+
+// Transaction
+"expense" = "Expense";
+"income" = "Income";
+"amount" = "Amount";
+"category" = "Category";
+"account" = "Account";
+"note" = "Note";
+"date" = "Date";
+"date_time" = "Date & Time";
+"type" = "Type";
+"add_transaction" = "Add Entry";
+"add_note" = "Add Note";
+"select_category" = "Select Category";
+"select_account" = "Select Account";
+"not_selected" = "Not Selected";
+"save_transaction" = "Save";
+"quick_input" = "Quick Input";
+
+// Settings
+"language" = "Language";
+"language_settings" = "Language Settings";
+"currency" = "Currency";
+"primary_currency" = "Primary Currency";
+"theme" = "Appearance";
+"personalization" = "Personalization";
+"theme_color" = "Theme Color";
+"tabbar_style" = "TabBar Style";
+"system_style" = "System Style";
+"custom_style" = "Custom";
+"icon_style" = "Icon Style";
+"filled" = "Filled";
+"outline" = "Outline";
+"animation" = "Animations";
+"enable_animation" = "Enable Animations";
+"animation_hint" = "Disable to turn off transition animations";
+"restart_required" = "Restart required to apply changes";
+"preview" = "Preview";
+"theme_button_preview" = "Theme Button Preview";
+
+// Statistics
+"total_expense" = "Total Expense";
+"total_income" = "Total Income";
+"balance" = "Balance";
+"this_month" = "This Month";
+"this_week" = "This Week";
+"today" = "Today";
+"this_year" = "This Year";
+"expense_trend" = "Expense Trend";
+"category_stats" = "Category Statistics";
+"no_data" = "No Data";
+
+// Accounts
+"cash" = "Cash";
+"bank_card" = "Bank Card";
+"credit_card" = "Credit Card";
+"alipay" = "Alipay";
+"wechat_pay" = "WeChat Pay";
+"total_assets" = "Total Assets";
+"total_liabilities" = "Total Liabilities";
+"net_assets" = "Net Assets";
+"add_account" = "Add Account";
+
+// Categories - Expense
+"food" = "Food & Dining";
+"transport" = "Transport";
+"shopping" = "Shopping";
+"entertainment" = "Entertainment";
+"housing" = "Housing";
+"medical" = "Medical";
+"education" = "Education";
+"travel" = "Travel";
+"other" = "Other";
+"daily" = "Daily";
+"communication" = "Communication";
+"fitness" = "Fitness";
+"beauty" = "Beauty";
+"pet" = "Pet";
+
+// Categories - Income
+"salary" = "Salary";
+"bonus" = "Bonus";
+"investment" = "Investment";
+"part_time" = "Part-time";
+"gift" = "Gift";
+"refund" = "Refund";
+"interest" = "Interest";
+
+// Budget
+"budget" = "Budget";
+"monthly_budget" = "Monthly Budget";
+"remaining_budget" = "Remaining Budget";
+"over_budget" = "Over Budget";
+"set_budget" = "Set Budget";
+"budget_progress" = "Budget Progress";
+
+// Time
+"yesterday" = "Yesterday";
+"days_ago" = "%d days ago";
+"just_now" = "Just now";
+"minutes_ago" = "%d minutes ago";
+"hours_ago" = "%d hours ago";
+
+// Other Features
+"icloud_sync" = "iCloud Sync";
+"password_protection" = "Password Protection";
+"bill_import" = "Import Bills";
+"bill_export" = "Export Bills";
+"smart_accounting" = "Smart Accounting";
+"voice_input" = "Voice Input";
+"ocr_scan" = "Scan Receipt";
+"about" = "About";
+"version" = "Version";
+"rate_app" = "Rate App";
+"feedback" = "Feedback";
+"privacy_policy" = "Privacy Policy";
+"terms_of_service" = "Terms of Service";
+
+// Exchange Rate
+"exchange_rate" = "Exchange Rate";
+"live_rate" = "Live Rate";
+"last_update" = "Last Update";
+"update_rate" = "Update Rate";
+"rate_updated" = "Rate Updated";
+"rate_update_failed" = "Update failed, please check network";
+"never_updated" = "Never Updated";
+"rate_source" = "Exchange rate data from ECB, updates hourly";
+
+// Language
+"follow_system" = "Follow System";
+"simplified_chinese" = "简体中文";
+"traditional_chinese" = "繁體中文";
+"english" = "English";
+"japanese" = "日本語";
+"korean" = "한국어";
+"language_change_hint" = "Restart app to fully apply language changes";
+
+// Settings Features
+"screenshot_import" = "Screenshot Import";
+"dynamic_island" = "Dynamic Island";
+"cycle_management" = "Cycle Management";
+"installment_management" = "Installment";
+"category_management" = "Categories";
+"tag_management" = "Tags";
+"budget_feature" = "Budget";
+"reimbursement" = "Reimbursement";
+"currency_exchange" = "Currency & Rate";
+"asset_settings" = "Asset Settings";
+"statistics_settings" = "Statistics Settings";
+"template_settings" = "Templates";
+"refund_settings" = "Refund Settings";
+"multi_book" = "Multi-Book";
+"saving_feature" = "Savings";
+"personalization" = "Personalization";
+"share_app" = "Share App";
+
+// Home
+"home" = "Home";
+"recent_transactions" = "Recent Transactions";
+"view_all" = "View All";
+"no_transactions" = "No transactions yet";
+"start_recording" = "Start recording";
+"monthly_overview" = "Monthly Overview";
+
+// More Settings
+"location_settings" = "Location";
+"bill_image" = "Bill Images";
+"time_settings" = "Time Settings";
+"bookkeeping_map" = "Expense Map";
+"backup_restore" = "Backup & Restore";
+"efficiency" = "Efficiency";
+"faq" = "FAQ";
+"user_guide" = "User Guide";
+"help_feedback" = "Help & Feedback";
+
+// Dashboard
+"default_ledger" = "Default Ledger";
+"income_expense_calendar" = "Calendar";
+"total_expense" = "Total Expense";
+"total_income" = "Total Income";
+"month_balance" = "Balance";
+"no_transactions_this_month" = "No transactions this month";
+"tap_plus_to_start" = "Tap + to start recording";
+"sort_by_time" = "Sort by Time";
+"sort_by_amount" = "Sort by Amount";
+"sort_by_category" = "Sort by Category";
+"search" = "Search";
+"show_expense_only" = "Show Expense Only";
+"show_income_only" = "Show Income Only";
+"export_data" = "Export Data";
+
+// Assets
+"net_worth" = "Net Worth";
+"total_assets" = "Total Assets";
+"total_liabilities" = "Liabilities";
+"add_account" = "Add Account";
+"no_accounts" = "No Accounts";
+"tap_to_add_account" = "Tap + to add account";
+
+// Savings
+"savings" = "Savings";
+"saving_stats" = "Saving Stats";
+"saving_reminder" = "Reminders";
+"sort_order" = "Sort Order";
+"hide_completed" = "Hide Completed";
+"show_completed" = "Show Completed";
+"no_data" = "No Data";
+"sort_by_progress" = "Sort by Progress";
+"total_budget" = "Total Budget";
+
+// Statistics
+"stats_week" = "Week";
+"stats_month" = "Month";
+"stats_year" = "Year";
+"stats_all" = "All";
+"stats_range" = "Range";
+"filter" = "Filter";
+"start" = "Start";
+"end" = "End";
+"income_expense_stats" = "Income & Expense";
+"balance" = "Balance";
+"yearly_avg_expense" = "Yearly Avg";
+"reimbursement_stats" = "Reimbursement";
+"pending_reimbursement" = "Pending";
+"reimbursed" = "Reimbursed";
+"transfer_stats" = "Transfers";
+"repayment" = "Repayment";
+"receipt" = "Receipt";
+"expense_category_detail" = "Expense by Category";
+"income_category_detail" = "Income by Category";
+"all_categories" = "All Categories";
+"no_expense_category_data" = "No expense data";
+"no_income_category_data" = "No income data";
+"collapse" = "Collapse";
+"expand_all" = "Expand All";
+"bill_summary" = "Summary";
+"show_balance_color" = "Show Colors";
+"total" = "Total";
+"yearly_avg" = "Yearly Avg";
+"share_current_page" = "Share Page";
+
+// Saving Methods
+"saving_fixed" = "Fixed Savings";
+"saving_flexible" = "Flexible Savings";
+"saving_week52" = "52-Week Challenge";
+"saving_day365" = "365-Day Challenge";
+
+// Profile
+"my_ledger" = "Track every transaction";
+
+// User Guide
+"guide_description" = "View online documentation to learn how to use Spendo";
+"quick_start_guide" = "Quick Start";
+"view_readme" = "View README";
+"detailed_guide" = "Detailed Guide";
+"view_wiki" = "View Wiki";
+"source_code" = "Source Code";
+"view_github" = "View on GitHub";
+"open_source_note" = "Spendo is an open source project";
+
+"view_guide" = "View Online Guide";
+"view_website" = "Visit Website";
+"ledger_title" = "My Ledger";
