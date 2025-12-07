@@ -48,7 +48,7 @@ struct OCRScannerView: View {
                                 Image(systemName: "doc.text.viewfinder")
                                     .font(.system(size: 60))
                                     .foregroundColor(SpendoTheme.textTertiary)
-                                Text("点击下方按钮扫描小票")
+                                Text("tap_to_scan".localized)
                                     .font(.system(size: 15))
                                     .foregroundColor(SpendoTheme.textSecondary)
                             }
@@ -62,7 +62,7 @@ struct OCRScannerView: View {
                             VStack(spacing: 12) {
                                 ProgressView()
                                     .scaleEffect(1.2)
-                                Text("正在识别小票...")
+                                Text("recognizing".localized)
                                     .font(.system(size: 14))
                                     .foregroundColor(SpendoTheme.textSecondary)
                             }
@@ -70,7 +70,7 @@ struct OCRScannerView: View {
                         } else if receiptData.amount != nil {
                             // 识别结果展示
                             VStack(spacing: 16) {
-                                Text("识别结果")
+                                Text("recognition_result".localized)
                                     .font(.system(size: 16, weight: .semibold))
                                     .foregroundColor(SpendoTheme.textPrimary)
                                     .frame(maxWidth: .infinity, alignment: .leading)

@@ -31,9 +31,9 @@ struct AnalyticsView: View {
                     
                     // Tab切换
                     Picker("视图", selection: $selectedTab) {
-                        Text("概览").tag(AnalyticsTab.overview)
-                        Text("趋势").tag(AnalyticsTab.trend)
-                        Text("洞察").tag(AnalyticsTab.insights)
+                        Text("overview".localized).tag(AnalyticsTab.overview)
+                        Text("trend".localized).tag(AnalyticsTab.trend)
+                        Text("insights".localized).tag(AnalyticsTab.insights)
                     }
                     .pickerStyle(.segmented)
                     .padding(.horizontal)
@@ -46,10 +46,10 @@ struct AnalyticsView: View {
                             Image(systemName: "chart.pie")
                                 .font(.system(size: 60))
                                 .foregroundColor(SpendoTheme.textTertiary)
-                            Text("无统计数据")
+                            Text("no_data".localized)
                                 .font(.system(size: 18, weight: .medium))
                                 .foregroundColor(SpendoTheme.textSecondary)
-                            Text("添加交易后即可查看统计分析")
+                            Text("add_transaction_hint".localized)
                                 .font(.system(size: 14))
                                 .foregroundColor(SpendoTheme.textTertiary)
                             Spacer()
@@ -73,7 +73,7 @@ struct AnalyticsView: View {
                     }
                 }
             }
-            .navigationTitle("统计分析")
+            .navigationTitle("category_stats".localized)
         }
     }
     

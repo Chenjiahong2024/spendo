@@ -312,7 +312,7 @@ struct SavingMethodDetailView: View {
                             // TODO: 创建存钱计划
                             dismiss()
                         }) {
-                            Text("开始存钱")
+                            Text("get_started".localized)
                                 .font(.system(size: 17, weight: .semibold))
                                 .foregroundColor(.white)
                                 .frame(maxWidth: .infinity)
@@ -360,7 +360,7 @@ struct BudgetView: View {
                         if budgets.isEmpty {
                             // 空状态视图
                             VStack(spacing: 16) {
-                                Text("暂无数据")
+                                Text("no_data".localized)
                                     .font(.system(size: 16))
                                     .foregroundColor(SpendoTheme.textTertiary)
                             }
@@ -373,7 +373,7 @@ struct BudgetView: View {
                                     BudgetCard(
                                         budget: totalBudget,
                                         spent: monthlyTotalSpent,
-                                        categoryName: "总预算"
+                                        categoryName: "total_budget".localized
                                     )
                                 }
                                 
@@ -395,7 +395,7 @@ struct BudgetView: View {
                     .padding(.bottom, 100)
                 }
             }
-            .navigationTitle("存钱")
+            .navigationTitle("tab_savings".localized)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     HStack(spacing: 16) {

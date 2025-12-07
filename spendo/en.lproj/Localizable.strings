@@ -327,3 +327,13 @@
 "change" = "Change";
 "stop_recording" = "Stop";
 "start_recording" = "Start";
+
+// Statistics
+"overview" = "Overview";
+"trend" = "Trend";
+"insights" = "Insights";
+"add_transaction_hint" = "Add transactions to view statistics";
+
+// OCR
+"tap_to_scan" = "Tap button below to scan receipt";
+"recognizing" = "Recognizing...";

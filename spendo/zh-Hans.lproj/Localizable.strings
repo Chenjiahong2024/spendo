@@ -327,3 +327,13 @@
 "change" = "更换";
 "stop_recording" = "停止录音";
 "start_recording" = "开始录音";
+
+// 统计
+"overview" = "概览";
+"trend" = "趋势";
+"insights" = "洞察";
+"add_transaction_hint" = "添加交易后即可查看统计分析";
+
+// OCR
+"tap_to_scan" = "点击下方按钮扫描小票";
+"recognizing" = "正在识别小票...";
