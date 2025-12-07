@@ -1020,5 +1020,9 @@ struct LanguageSettingsView: View {
         if let language = AppLanguage(rawValue: code) {
             languageManager.currentLanguage = language
         }
+        // 延迟刷新确保设置已保存
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            languageManager.forceRefresh()
+        }
     }
 }

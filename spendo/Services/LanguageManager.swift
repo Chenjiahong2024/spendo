@@ -111,6 +111,9 @@ class LanguageManager: ObservableObject {
     
     @Published var bundle: Bundle = .main
     
+    // 用于强制刷新视图的ID
+    @Published var refreshID = UUID()
+    
     private init() {
         let savedLanguage = UserDefaults.standard.string(forKey: "appLanguage") ?? "system"
         self.currentLanguage = AppLanguage(rawValue: savedLanguage) ?? .system
@@ -123,11 +126,22 @@ class LanguageManager: ObservableObject {
            let bundle = Bundle(path: path) {
             self.bundle = bundle
         } else {
-            // 使用系统语言
-            self.bundle = .main
+            // 使用系统语言 - 尝试获取系统首选语言
+            if let preferredLang = Locale.preferredLanguages.first {
+                let langCode = String(preferredLang.prefix(2))
+                if let path = Bundle.main.path(forResource: langCode, ofType: "lproj"),
+                   let bundle = Bundle(path: path) {
+                    self.bundle = bundle
+                } else {
+                    self.bundle = .main
+                }
+            } else {
+                self.bundle = .main
+            }
         }
         
-        // 通知视图更新
+        // 强制刷新所有视图
+        refreshID = UUID()
         objectWillChange.send()
     }
     
@@ -136,9 +150,10 @@ class LanguageManager: ObservableObject {
         return bundle.localizedString(forKey: key, value: key, table: nil)
     }
     
-    // 需要重启提示
-    var needsRestart: Bool {
-        return true // 某些文本可能需要重启才能完全生效
+    // 强制刷新
+    func forceRefresh() {
+        refreshID = UUID()
+        objectWillChange.send()
     }
 }
 

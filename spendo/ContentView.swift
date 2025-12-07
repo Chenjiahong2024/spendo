@@ -11,18 +11,19 @@ struct ContentView: View {
     @State private var showAddTransaction = false
     @Query private var settingsArray: [UserSettings]
     @ObservedObject private var themeManager = ThemeManager.shared
+    @ObservedObject private var languageManager = LanguageManager.shared
     
     // 启动时读取的 TabBar 样式（运行时不变）
     @State private var useCustomStyle: Bool = UserDefaults.standard.integer(forKey: "tabBarStyle") == 1
     
-    // Tab 配置
+    // Tab 配置 - 使用本地化字符串
     private var tabs: [(icon: String, title: String)] {
         [
-            ("doc.text", "账本"),
-            ("creditcard", "资产"),
-            ("banknote", "存钱"),
-            ("chart.bar", "统计"),
-            ("gearshape", "设置")
+            ("doc.text", "tab_ledger".localized),
+            ("creditcard", "tab_assets".localized),
+            ("banknote", "tab_savings".localized),
+            ("chart.bar", "tab_stats".localized),
+            ("gearshape", "tab_settings".localized)
         ]
     }
     
@@ -39,6 +40,7 @@ struct ContentView: View {
             // 浮动添加按钮 - 右下角
             floatingAddButton
         }
+        .id(languageManager.refreshID) // 语言变化时强制刷新
         .preferredColorScheme(.dark)
         .sheet(isPresented: $showAddTransaction) {
             AddTransactionView()
@@ -50,31 +52,31 @@ struct ContentView: View {
         TabView(selection: $selectedTab) {
             DashboardView()
                 .tabItem {
-                    Label("账本", systemImage: "doc.text.fill")
+                    Label("tab_ledger".localized, systemImage: "doc.text.fill")
                 }
                 .tag(0)
             
             AccountsView()
                 .tabItem {
-                    Label("资产", systemImage: "creditcard.fill")
+                    Label("tab_assets".localized, systemImage: "creditcard.fill")
                 }
                 .tag(1)
             
             BudgetView()
                 .tabItem {
-                    Label("存钱", systemImage: "banknote.fill")
+                    Label("tab_savings".localized, systemImage: "banknote.fill")
                 }
                 .tag(2)
             
             AnalyticsViewNew()
                 .tabItem {
-                    Label("统计", systemImage: "chart.bar.fill")
+                    Label("tab_stats".localized, systemImage: "chart.bar.fill")
                 }
                 .tag(3)
             
             SettingsView()
                 .tabItem {
-                    Label("设置", systemImage: "gearshape.fill")
+                    Label("tab_settings".localized, systemImage: "gearshape.fill")
                 }
                 .tag(4)
         }
